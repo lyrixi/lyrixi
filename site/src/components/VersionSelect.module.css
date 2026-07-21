@@ -1,0 +1,44 @@
+.root {
+  position: relative;
+}
+
+.trigger {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--lyrixi-border);
+  background: rgba(53, 230, 182, 0.08);
+  color: var(--lyrixi-brand);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.trigger:hover {
+  border-color: var(--lyrixi-brand);
+}
+
+.menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  z-index: 30;
+  min-width: 120px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border-radius: 10px;
+  background: var(--lyrixi-bg-elevated);
+  border: 1px solid var(--lyrixi-border);
+}
+
+.option {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: var(--lyrixi-text);
+  font-size: 13px;
+}
+
+.option:hover {
+  background: rgba(53, 230, 182, 0.12);
+  color: var(--lyrixi-brand);
+}

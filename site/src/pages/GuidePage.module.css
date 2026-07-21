@@ -1,0 +1,79 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--lyrixi-header-height));
+  padding: 48px 24px 64px;
+  text-align: center;
+}
+
+.heroArt {
+  width: min(280px, 70vw);
+  height: auto;
+  animation: float 4.5s ease-in-out infinite;
+  filter: drop-shadow(0 0 28px rgba(53, 230, 182, 0.35));
+}
+
+.slogan {
+  margin: 20px 0 8px;
+  letter-spacing: 0.35em;
+  font-size: 14px;
+  color: var(--lyrixi-text);
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 750;
+  background: linear-gradient(120deg, #fff 20%, var(--lyrixi-brand) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.tagline {
+  margin: 12px 0 28px;
+  color: var(--lyrixi-text-secondary);
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.primary,
+.secondary {
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.primary {
+  background: var(--lyrixi-brand);
+  color: #0b1f1a;
+}
+
+.secondary {
+  border: 1px solid var(--lyrixi-border);
+  color: var(--lyrixi-text);
+}
+
+.secondary:hover {
+  border-color: var(--lyrixi-brand);
+  color: var(--lyrixi-brand);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

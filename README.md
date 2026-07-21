@@ -1,50 +1,24 @@
-<div align="center"><a name="readme-top"></a>
+# Lyrixi
 
-<img height="180" src="https://lyrixi.github.io/lyrixi-mobile/assets/images/logo.png">
+双库文档站（当前以 `lyrixi-mobile` 为主；`lyrixi-mobile-rn` 入口已预留，待 npm 发布后开启）。
 
-<div style="font-size:24px;text-align:center;">lyrixi-mobile</div>
+## 本地开发
 
-<div style="text-align:center;margin-top: 10px;">React 19 UI library for mobile.
-Minimalist Token, Unified API, Simple and easy to use</div>
+需与 sibling 源码同级：
 
-<img height="8" width="100%" src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png"/>
-
-</div>
-
-> **For AI assistants (Cursor, Copilot, etc.):** After `npm install`, run `npx lyrixi-mobile-ai` to sync the `.ai` directory (docs, rules, skills) into your project root and create `.cursor/` / `.claude/` symlinks. Library skills and rules overwrite same-name entries; your custom skills/rules are kept. Re-run after upgrading the package to refresh docs. Full API: [lyrixi.github.io/lyrixi-mobile](https://lyrixi.github.io/lyrixi-mobile).
-
-## 📦 CSS
-
-### Less
+```text
+Documents/front/
+  lyrixi/           ← 本仓库
+  lyrixi-mobile/
+  lyrixi-mobile-rn/ ← 可选（未发布前可不依赖）
+```
 
 ```bash
-@import 'lyrixi-mobile/assets/index.less';
+npm install
+npm run dev      # http://localhost:5173/lyrixi/
+npm run build    # 输出到 docs/：static/（站点打包）+ assets/（根目录外网资源原样拷贝）
 ```
 
-### CSS import
+GitHub Pages：Settings → Pages → Deploy from branch → `/docs`。
 
-```bash
-@import 'lyrixi-mobile/assets/index.css';
-```
-
-## 📦 Install
-
-### NPM
-
-```bash
-npm install lyrixi-mobile
-```
-
-## 🔨 Usage
-
-```tsx
-import { Button } from 'lyrixi-mobile'
-
-export default () => (
-  <>
-    <Button className="primary">PRESS ME</Button>
-  </>
-)
-```
-
-[Visit lyrixi-mobile docs](https://lyrixi.github.io/lyrixi-mobile)
+更细说明见 [README.docs.md](./README.docs.md)。
