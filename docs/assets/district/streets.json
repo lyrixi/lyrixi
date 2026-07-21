@@ -1,0 +1,12 @@
+[
+  {
+    "id": "1",
+    "name": "街道1",
+    "isLeaf": true
+  },
+  {
+    "id": "2",
+    "name": "街道2",
+    "isLeaf": true
+  }
+]
