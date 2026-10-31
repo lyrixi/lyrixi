@@ -1,0 +1,117 @@
+// 聊天框
+.lyrixi-chat-item {
+  display: flex;
+  margin-bottom: 24px;
+
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+.lyrixi-checkbox + .lyrixi-chat-item-main {
+  margin-left: 4px;
+}
+
+.lyrixi-chat-item-main {
+  display: flex;
+  flex: 1;
+}
+
+// 头像
+.lyrixi-chat-item-avatar {
+  .lyrixi-bg-avatar-default();
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+
+  & > .lyrixi-avatar {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+// 内容框
+.lyrixi-chat-item-content {
+  display: inline-block;
+  width: 70%;
+  margin-left: 12px;
+}
+
+// 作者
+.lyrixi-chat-item-content-author {
+  margin-bottom: 4px;
+  color: #666;
+  font-size: 12px;
+}
+
+.lyrixi-chat-item-content-author + .lyrixi-chat-item-content-bubble {
+  &::after {
+    top: 10px;
+  }
+}
+
+// 汽泡
+.lyrixi-chat-item-content-bubble {
+  position: relative;
+  display: inline-block;
+  max-width: 96%;
+  padding: 10px;
+  word-break: normal;
+  background-color: #ddd;
+  border-radius: 3px;
+
+  // 箭头
+  &::after {
+    position: absolute;
+    top: 18px;
+    right: 100%;
+    width: 0;
+    height: 0;
+    margin-top: -5px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    border-right-color: #ddd;
+    content: ' ';
+  }
+
+  p {
+    margin: 0;
+    padding-top: 3px;
+    line-height: 24px;
+    text-align: left;
+
+    [data-emoji] {
+      width: 26px;
+      height: 24px;
+    }
+  }
+}
+
+// 右对齐
+.lyrixi-chat-item.lyrixi-right {
+  .lyrixi-chat-item-main {
+    flex-direction: row-reverse;
+  }
+
+  .lyrixi-chat-item-content {
+    text-align: right;
+    width: 70%;
+    margin-right: 12px;
+  }
+
+  .lyrixi-chat-item-content-bubble {
+    background-color: #b8daff;
+
+    &::after {
+      left: 100%;
+      border-color: transparent;
+      border-left-color: #b8daff;
+    }
+  }
+}

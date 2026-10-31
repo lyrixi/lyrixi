@@ -1,0 +1,21 @@
+@import 'Aside/PageAside.less';
+@import 'Footer/PageFooter.less';
+@import 'Header/PageHeader.less';
+@import 'Main/PageMain.less';
+
+/*
+* Page
+*/
+.lyrixi-page {
+  // flex布局
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: var(--lyrixi-bg-default);
+
+  &.lyrixi-page-has-aside {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,18 @@
+@import './tag.less';
+@import './modal.less';
+@import './images.less';
+
+// 公共面貌样式
+.lyrixi-appearance-none {
+  background: none;
+  border: none;
+  appearance: none;
+}
+
+// ios滚动过程中不允许点击tab，否则可能会局部白屏
+.lyrixi-ios-scrolling {
+  header,
+  footer {
+    pointer-events: none;
+  }
+}

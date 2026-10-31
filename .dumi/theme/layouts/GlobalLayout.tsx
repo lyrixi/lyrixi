@@ -1,6 +1,6 @@
 import { useOutlet } from 'dumi'
 
-import 'src/assets/index.less'
+import 'lyrixi-mobile/assets/index.less'
 
 export default function GlobalLayout() {
   return useOutlet()

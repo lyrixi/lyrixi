@@ -1,0 +1,65 @@
+// 项
+.lyrixi-transfer-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  height: 48px;
+  padding-left: 12px;
+}
+
+.lyrixi-transfer-item:not(:last-child) {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    right: 0;
+    height: 1px;
+    background-color: var(--lyrixi-border-color);
+  }
+}
+
+.lyrixi-transfer-item-operate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lyrixi-transfer-item-operate-icon {
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  &.lyrixi-add {
+    color: #fb8d38;
+  }
+
+  &.lyrixi-delete {
+    color: #f94f57;
+  }
+}
+
+.lyrixi-transfer-item-drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 100%;
+  text-align: center;
+
+  * {
+    pointer-events: none;
+  }
+}
+
+.lyrixi-transfer-item-drop-icon {
+  width: 20px;
+  height: 20px;
+  color: #919ba5;
+}
+
+.lyrixi-transfer-item-content {
+  flex: 1;
+  margin-left: 12px;
+}

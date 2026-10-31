@@ -1,0 +1,39 @@
+@import 'Group/CheckboxGroup.less';
+@import 'Checkbox/Solid.less';
+@import 'Checkbox/Text.less';
+@import 'Checkbox/Outlined.less';
+@import 'Checkbox/Filled.less';
+
+// Checkbox控件
+.lyrixi-checkbox {
+  .lyrixi-inline-flex();
+  .lyrixi-flex-align-center();
+
+  vertical-align: middle;
+
+  // 禁用状态
+  &[disabled] {
+    opacity: 0.5;
+  }
+}
+
+// input图标
+.lyrixi-checkbox-icon {
+  .lyrixi-inline-flex();
+  .lyrixi-flex-align-center();
+  .lyrixi-flex-justify-center();
+
+  box-sizing: border-box;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+
+// content
+.lyrixi-checkbox-icon + .lyrixi-checkbox-content {
+  margin-left: var(--lyrixi-space-s);
+}
+
+.lyrixi-checkbox-content + .lyrixi-checkbox-icon {
+  margin-left: var(--lyrixi-space-s);
+}

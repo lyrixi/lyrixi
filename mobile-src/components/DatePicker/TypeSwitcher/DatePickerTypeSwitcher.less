@@ -1,0 +1,28 @@
+// DatePicker.TypeSwitcher
+.lyrixi-datepicker-typeswitcher {
+  .lyrixi-flex();
+  .lyrixi-flex-align-center();
+  .lyrixi-flex-wrap();
+  .lyrixi-flex-justify-space-between();
+  // 换行间隙
+  gap: 8px;
+
+  .lyrixi-datepicker-typeswitcher-combo-previous,
+  .lyrixi-datepicker-typeswitcher-combo-next {
+    padding: 4px !important;
+  }
+}
+
+.lyrixi-datepicker-typeswitcher-combo {
+  .lyrixi-flex();
+  .lyrixi-flex-justify-flex-end();
+  .lyrixi-flex-align-center();
+}
+
+.lyrixi-datepicker-typeswitcher-combo-date {
+  display: block;
+  flex: none;
+
+  &.lyrixi-disabled {
+  }
+}

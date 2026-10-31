@@ -8,10 +8,10 @@ export default function HomePage() {
       <section className="lyrixi-home__hero">
         <img
           className="lyrixi-home__hero-art"
-          src="/lyrixi/brand/loading-hero.png"
+          src="/lyrixi/brand/logo-loading.png"
           alt="Lyrixi"
         />
-        <p className="lyrixi-home__slogan">你只要负责自律即可</p>
+        <p className="lyrixi-home__slogan">更懂你的前端专家</p>
         <h1 className="lyrixi-home__title">lyrixi-mobile</h1>
         <p className="lyrixi-home__tagline">React 19 移动端 UI 组件库</p>
         <div className="lyrixi-home__actions">

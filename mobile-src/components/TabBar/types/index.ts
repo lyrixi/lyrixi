@@ -1,0 +1,7 @@
+export * from './TabBar.modules.types'
+export * from './TabBar.Size.types'
+export * from './TabBar.common.types'
+export * from './TabBar.Group.types'
+export * from './TabBar.Menus.types'
+export * from './TabBar.Slide.types'
+export * from './TabBar.Tabs.types'

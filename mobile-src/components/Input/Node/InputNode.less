@@ -1,0 +1,58 @@
+// Input.Node: Placeholder
+.lyrixi-input-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--lyrixi-color-quaternary);
+}
+
+// Input.Node自增高内容
+div.lyrixi-input-autoSize-node {
+  min-height: var(--lyrixi-input-text-height);
+  overflow-y: auto;
+  display: flex;
+  flex-flow: wrap;
+  gap: 8px;
+  flex: 1;
+}
+
+// Input.Node单行内容
+div.lyrixi-input-text {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: auto;
+  gap: 8px;
+}
+
+// Input.Node: 解决自绘光标不能居中显示的问题
+// div.lyrixi-input-text {
+//   display: flex;
+//   align-items: center;
+//   white-space: nowrap;
+//   overflow-x: auto;
+// }
+
+// text 光标样式(已删除此功能)
+// div.lyrixi-input-text.lyrixi-input-focus::after {
+//   content: '';
+//   display: inline-block;
+//   width: 1px;
+//   height: 18px;
+//   background-color: currentColor;
+//   animation: lyrixi-input-cursor-blink 1s infinite;
+// }
+
+// @keyframes lyrixi-input-cursor-blink {
+//   0%,
+//   50% {
+//     opacity: 1;
+//   }
+
+//   51%,
+//   100% {
+//     opacity: 0;
+//   }
+// }

@@ -1,0 +1,127 @@
+// 选择控件
+.lyrixi-picker-main {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  flex: none;
+
+  // 禁用
+  &.lyrixi-disabled {
+    .lyrixi-picker-layer {
+      --lyrixi-picker-view-mask-top-background: none;
+      --lyrixi-picker-view-mask-bottom-background: none;
+    }
+  }
+}
+
+// 槽容器
+.lyrixi-picker-slotbox {
+  display: table;
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+
+// 一槽
+.lyrixi-picker-slot {
+  display: table-cell;
+  padding-top: 88px;
+  padding-bottom: 88px;
+  overflow: hidden;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
+  li {
+    height: 44px;
+    padding: 0 8px;
+    overflow: hidden;
+    color: var(--lyrixi-color-default);
+    font-size: 17px;
+    line-height: 44px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    pointer-events: none;
+
+    &.lyrixi-active {
+      color: var(--lyrixi-color-default);
+    }
+  }
+
+  &.lyrixi-lock li.lyrixi-active {
+    color: #b6b6b6;
+  }
+}
+
+// 遮皮
+.lyrixi-picker-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  pointer-events: none;
+
+  // 渐变
+  --lyrixi-picker-view-mask-top-background: linear-gradient(
+    to bottom,
+    #fff 0%,
+    rgba(255, 255, 255, 70%) 65%
+  );
+  --lyrixi-picker-view-mask-bottom-background: linear-gradient(
+    to top,
+    #fff 0%,
+    rgba(255, 255, 255, 70%) 65%
+  );
+
+  &::before,
+  &::after {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 88px;
+    content: '';
+  }
+
+  &::before {
+    top: 0;
+    // background: fade(#white, 70%);
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex: 1;
+    flex: 1;
+    background: linear-gradient(to bottom, #fff 0%, rgba(255, 255, 255, 70%) 65%);
+    background: var(--lyrixi-picker-view-mask-top-background);
+  }
+
+  &::after {
+    bottom: 0;
+    // background: fade(#white, 70%);
+    width: 100%;
+    -webkit-box-flex: 1;
+    flex: 1;
+    flex: 1;
+    background: linear-gradient(to top, #fff 0%, rgba(255, 255, 255, 70%) 65%);
+    background: var(--lyrixi-picker-view-mask-bottom-background);
+  }
+}
+
+// 遮皮选中
+.lyrixi-picker-layer-frame {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  right: 12px;
+  height: 44px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  .lyrixi-border-tb();
+}
+
+// 选择器中的tabs
+.lyrixi-picker-tabs {
+  .lyrixi-border-b();
+}
+
+.lyrixi-picker-tabs + .lyrixi-picker-main {
+  margin: 10px 0;
+}

@@ -1,0 +1,91 @@
+@import url(PreviewReload/PreviewReload.less);
+@import url(PreviewChoose/PreviewChoose.less);
+@import url(PreviewDelete/PreviewDelete.less);
+@import url(PreviewClose/PreviewClose.less);
+@import url(PreviewToolbar/PreviewToolbar.less);
+@import url(PreviewItem/PreviewItem.less);
+
+.lyrixi-media-preview-main {
+  display: flex;
+
+  .swiper-wrapper {
+    height: auto;
+    flex: 1;
+  }
+
+  .swiper-slide {
+    overflow: hidden;
+  }
+
+  // Top reserve space
+  &.lyrixi-closable {
+    .swiper-wrapper {
+      margin-top: 50px;
+    }
+  }
+
+  // Bottom reserve space
+  &.lyrixi-clearable,
+  &.lyrixi-choosable {
+    .swiper-wrapper {
+      margin-bottom: 80px;
+    }
+  }
+
+  position: relative;
+
+  // pagination
+  .swiper-pagination {
+    pointer-events: none;
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    bottom: auto;
+    width: auto;
+    color: var(--lyrixi-color-quaternary);
+
+    > span {
+      vertical-align: baseline;
+    }
+  }
+
+  // 上传中
+  &.lyrixi-uploading {
+    // 显示转圈
+    .lyrixi-media-preview-main-choose {
+      .lyrixi-media-uploading {
+        display: block;
+      }
+    }
+
+    // 上传中不允许删除与关闭
+    .lyrixi-media-preview-main-delete,
+    .lyrixi-media-preview-main-close,
+    .lyrixi-media-preview-main-reload {
+      display: none;
+    }
+  }
+}
+
+// 页面级
+.lyrixi-media-preview-main-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+// 图片容器, 用于旋转操作
+.lyrixi-media-preview-main-image-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

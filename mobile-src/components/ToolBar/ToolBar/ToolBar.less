@@ -1,0 +1,39 @@
+:root {
+  // Bg gray, input white
+  --lyrixi-toolbar-bg: var(--lyrixi-bg-default);
+  --lyrixi-toolbar-search-input-bg: white;
+  --lyrixi-toolbar-filled-bg: white;
+  --lyrixi-toolbar-filled-search-input-bg: var(--lyrixi-bg-default);
+}
+
+.lyrixi-toolbar {
+  // 相对定位
+  position: relative;
+  gap: 8px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  overflow-x: auto;
+  background-color: var(--lyrixi-toolbar-bg);
+
+  // 活动状态, 必须关闭弹窗后才可点击
+  &.lyrixi-active {
+    * {
+      pointer-events: none;
+    }
+  }
+}
+
+// Compatiable old models. Don't use gap
+.lyrixi-bad-android,
+.lyrixi-bad-ios {
+  .lyrixi-toolbar {
+    gap: initial;
+
+    // 非最后一项，且不是激活的搜索框
+    & > div:not(:last-child, .lyrixi-toolbar-search-bar-active) {
+      margin-right: 8px;
+    }
+  }
+}

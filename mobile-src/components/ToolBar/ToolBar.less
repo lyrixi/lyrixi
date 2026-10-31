@@ -1,0 +1,25 @@
+@import 'ToolBar/ToolBar.less';
+@import 'Dropdown/ToolBarDropdown.less';
+@import 'DateRange/ToolBarDateRange.less';
+@import 'Button/ToolBarButton.less';
+@import 'Compact/ToolBarCompact.less';
+@import 'Search/ToolBarSearch.less';
+@import 'SearchActive/ToolBarSearchActive.less';
+
+.lyrixi-toolbar-button {
+  border: 0 !important;
+}
+
+// 反向颜色改搜索框颜色
+.lyrixi-toolbar.lyrixi-toolbar-filled {
+  background-color: var(--lyrixi-toolbar-filled-bg);
+
+  .lyrixi-toolbar-search-bar-active {
+    background-color: var(--lyrixi-toolbar-filled-bg);
+  }
+
+  .lyrixi-toolbar-search-input,
+  .lyrixi-toolbar-button {
+    background-color: var(--lyrixi-toolbar-filled-search-input-bg);
+  }
+}

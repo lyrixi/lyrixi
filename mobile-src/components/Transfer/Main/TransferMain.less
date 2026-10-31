@@ -1,0 +1,45 @@
+// Main Container
+.lyrixi-transfer-main {
+  position: relative;
+  overflow: auto;
+  .lyrixi-flex-1();
+
+  min-height: 200px;
+  background-color: var(--lyrixi-bg-default);
+
+  // sortable控件样式
+  .lyrixi-sortable-ghost {
+    opacity: 0;
+  }
+
+  .lyrixi-sortable-drag {
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 60%);
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 12%), 0 6px 16px 0 rgba(0, 0, 0, 8%),
+      0 9px 28px 8px rgba(0, 0, 0, 5%);
+  }
+
+  .lyrixi-sortable-chosen {
+    background-color: rgba(255, 255, 255, 60%);
+    box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 12%), 0 6px 16px 0 rgba(0, 0, 0, 8%),
+      0 9px 28px 8px rgba(0, 0, 0, 5%);
+  }
+}
+
+.lyrixi-transfer-title {
+  display: flex;
+  align-items: center;
+  margin: 16px 20px 8px;
+  font-size: 14px;
+  color: #77818c;
+  font-weight: 400;
+}
+
+.lyrixi-transfer-title-content {
+  flex: 1;
+}
+
+// 分组
+.lyrixi-transfer-card {
+  overflow: hidden;
+}

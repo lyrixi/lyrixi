@@ -1,0 +1,100 @@
+@import 'StepHorizontalCenter/StepHorizontalCenter.less';
+@import 'StepHorizontalLeft/StepHorizontalLeft.less';
+@import 'StepVerticalCenter/StepVerticalCenter.less';
+@import 'StepVerticalLeft/StepVerticalLeft.less';
+
+// 步骤条
+.lyrixi-steps {
+  display: flex;
+  position: relative;
+}
+
+.lyrixi-steps-vertical {
+  flex-direction: column;
+
+  .lyrixi-steps-item {
+    padding-bottom: 32px;
+  }
+}
+
+// Item公共样式
+.lyrixi-steps-item {
+  position: relative;
+  display: flex;
+
+  &.lyrixi-finish {
+    .lyrixi-steps-item-icon {
+      color: var(--lyrixi-color-primary);
+    }
+
+    .lyrixi-steps-item-icon-circle {
+      background-color: var(--lyrixi-color-primary);
+      color: white;
+    }
+
+    .lyrixi-steps-item-rail {
+      background-color: var(--lyrixi-color-primary) !important;
+    }
+  }
+
+  &.lyrixi-active {
+    .lyrixi-steps-item-icon {
+      color: var(--lyrixi-color-primary);
+    }
+
+    .lyrixi-steps-item-icon-circle {
+      background-color: var(--lyrixi-color-primary);
+      color: white;
+    }
+  }
+
+  &.lyrixi-error {
+    .lyrixi-steps-item-title,
+    .lyrixi-steps-item-description {
+      color: var(--lyrixi-color-danger);
+    }
+
+    .lyrixi-steps-item-icon {
+      color: var(--lyrixi-color-danger);
+    }
+
+    .lyrixi-steps-item-icon-circle {
+      background-color: var(--lyrixi-color-danger);
+      color: white;
+    }
+  }
+}
+
+.lyrixi-steps-item-content {
+  flex: 1;
+}
+
+.lyrixi-steps-item-title {
+  height: var(--lyrixi-steps-title-height);
+  line-height: var(--lyrixi-steps-title-height);
+}
+
+.lyrixi-steps-item-description {
+  color: var(--lyrixi-color-tertiary);
+}
+
+// Icon
+.lyrixi-steps-item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--lyrixi-steps-icon-size);
+  height: var(--lyrixi-steps-icon-size);
+  color: var(--lyrixi-border-color);
+}
+
+.lyrixi-steps-item-icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--lyrixi-steps-icon-size);
+  height: var(--lyrixi-steps-icon-size);
+  border-radius: 100%;
+  color: white;
+  background-color: var(--lyrixi-border-color);
+}

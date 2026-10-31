@@ -1,0 +1,21 @@
+@import 'Ellipsis/TextEllipsis.less';
+
+.lyrixi-text,
+.lyrixi-text-block {
+  vertical-align: middle;
+}
+
+// 只有flex布局, 才能让lyrixi-text-content::before高度撑满lyrixi-text-content
+.lyrixi-text {
+  display: inline-flex;
+}
+
+.lyrixi-text-block {
+  display: flex;
+}
+
+// 高亮
+.lyrixi-text-highlight {
+  display: inline-block;
+  color: var(--lyrixi-color-primary);
+}

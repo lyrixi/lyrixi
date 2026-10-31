@@ -1,0 +1,26 @@
+// 当没有确定按钮时，删除按钮占满整个高度
+.lyrixi-keyboard-has-ok {
+  .lyrixi-keyboard-button-action.lyrixi-delete {
+    height: 50px;
+    flex: none;
+  }
+}
+
+// 操作按钮样式
+.lyrixi-keyboard-button-action {
+  flex: 1;
+  width: 90px;
+
+  .lyrixi-keyboard-icon {
+    font-size: 24px;
+    color: var(--lyrixi-color-default);
+  }
+
+  // 确定按钮
+  &.lyrixi-ok {
+    background-color: var(--lyrixi-color-primary);
+    color: white;
+    flex: 1;
+    height: auto;
+  }
+}

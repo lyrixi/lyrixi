@@ -1,0 +1,97 @@
+// Button按钮
+// 基础样式
+.lyrixi-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  // Disabled events
+  &[disabled],
+  &.lyrixi-disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  // 高度大小
+  .button-size() {
+    height: var(--lyrixi-button-height);
+    // 用于在flex-direction: column容器内, 高度被block(flex: 1)覆盖的问题
+    min-height: var(--lyrixi-button-height);
+    padding: 0 var(--lyrixi-button-padding-vertical);
+    font-size: var(--lyrixi-button-font-size);
+
+    &.lyrixi-size-equal {
+      width: var(--lyrixi-button-height);
+      padding: 0;
+    }
+  }
+
+  &.lyrixi-size-xs {
+    --lyrixi-button-height: var(--lyrixi-height-xs);
+    --lyrixi-button-padding-vertical: 4px;
+    --lyrixi-button-font-size: var(--lyrixi-font-size-xs);
+    .button-size();
+  }
+
+  &.lyrixi-size-s {
+    --lyrixi-button-height: var(--lyrixi-height-s);
+    --lyrixi-button-padding-vertical: 8px;
+    --lyrixi-button-font-size: var(--lyrixi-font-size-s);
+    .button-size();
+  }
+
+  &.lyrixi-size-m {
+    --lyrixi-button-height: var(--lyrixi-height-m);
+    --lyrixi-button-padding-vertical: 12px;
+    --lyrixi-button-font-size: var(--lyrixi-font-size-m);
+    .button-size();
+  }
+
+  &.lyrixi-size-l {
+    --lyrixi-button-height: var(--lyrixi-height-l);
+    --lyrixi-button-padding-vertical: 16px;
+    --lyrixi-button-font-size: var(--lyrixi-font-size-l);
+    .button-size();
+  }
+
+  &.lyrixi-size-xl {
+    --lyrixi-button-height: var(--lyrixi-height-xl);
+    --lyrixi-button-padding-vertical: 20px;
+    --lyrixi-button-font-size: var(--lyrixi-font-size-xl);
+    .button-size();
+  }
+
+  &.lyrixi-size-xxl {
+    --lyrixi-button-height: var(--lyrixi-height-xxl);
+    --lyrixi-button-padding-vertical: 24px;
+    --lyrixi-button-font-size: var(--lyrixi-font-size-xxl);
+    .button-size();
+  }
+}
+
+.lyrixi-button-block {
+  display: flex;
+  flex: 1;
+}
+
+// Icon
+.lyrixi-button-icon {
+  color: currentcolor;
+}
+
+.lyrixi-button:not(.lyrixi-flex-vertical) {
+  .lyrixi-button-icon + .lyrixi-button-text,
+  .lyrixi-button-text + .lyrixi-button-icon {
+    margin-left: 4px;
+  }
+}
+
+.lyrixi-button.lyrixi-flex-vertical {
+  .lyrixi-button-icon + .lyrixi-button-text,
+  .lyrixi-button-text + .lyrixi-button-icon {
+    margin-top: 4px;
+  }
+}

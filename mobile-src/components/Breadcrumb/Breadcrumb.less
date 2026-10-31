@@ -1,0 +1,94 @@
+.lyrixi-breadcrumb {
+  max-width: 100%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: var(--lyrixi-space-s);
+}
+
+.lyrixi-breadcrumb.lyrixi-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lyrixi-breadcrumb.lyrixi-disabled,
+.lyrixi-breadcrumb[disabled] {
+  pointer-events: none;
+
+  .lyrixi-breadcrumb-item {
+    color: var(--lyrixi-color-secondary);
+  }
+}
+
+.lyrixi-breadcrumb-separator {
+  display: flex;
+  align-items: center;
+  flex: none;
+  color: var(--lyrixi-color-quaternary);
+  font-size: var(--lyrixi-font-size-s);
+}
+
+.lyrixi-breadcrumb-item {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex: none;
+  flex-wrap: nowrap;
+  max-width: 100%;
+  white-space: nowrap;
+  color: var(--lyrixi-color-primary);
+
+  &.lyrixi-active {
+    color: var(--lyrixi-color-secondary);
+  }
+
+  &.lyrixi-disabled,
+  &[disabled] {
+    pointer-events: none;
+    color: var(--lyrixi-color-secondary);
+  }
+}
+
+.lyrixi-breadcrumb.lyrixi-breadcrumb-compact {
+  .lyrixi-breadcrumb-item {
+    padding: 0;
+  }
+}
+
+.lyrixi-breadcrumb-item-icon {
+  margin-right: 4px;
+}
+
+.lyrixi-breadcrumb-item-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lyrixi-breadcrumb-item-description {
+  color: var(--lyrixi-color-secondary);
+  font-size: var(--lyrixi-font-size-s);
+}
+
+.lyrixi-breadcrumb-item-name + .lyrixi-breadcrumb-item-description,
+.lyrixi-breadcrumb-item-description + .lyrixi-breadcrumb-item-name {
+  margin-top: 2px;
+}
+
+.lyrixi-breadcrumb.lyrixi-size-s {
+  .lyrixi-breadcrumb-item-name {
+    font-size: var(--lyrixi-font-size-s);
+  }
+}
+
+.lyrixi-breadcrumb.lyrixi-size-m {
+  .lyrixi-breadcrumb-item-name {
+    font-size: var(--lyrixi-font-size-m);
+  }
+}
+
+.lyrixi-breadcrumb.lyrixi-size-l {
+  .lyrixi-breadcrumb-item-name {
+    font-size: var(--lyrixi-font-size-l);
+  }
+}

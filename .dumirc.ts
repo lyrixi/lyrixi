@@ -1,12 +1,9 @@
-import path from 'node:path'
-
 import { defineConfig } from 'dumi'
 
-import { MOBILE_ROOT, mobileResolve } from './config/mobile-root'
+import { MOBILE_ESM, MOBILE_SRC, mobileResolve } from './config/mobile-root'
 import { configureSrcSvgWebpack } from './scripts/configureSrcSvgWebpack'
 
-const mobileSrc = path.join(MOBILE_ROOT, 'src')
-const mobileNodeModules = path.join(MOBILE_ROOT, 'node_modules')
+const mobileEsm = MOBILE_ESM
 
 export default defineConfig({
   outputPath: 'docs',
@@ -17,9 +14,9 @@ export default defineConfig({
   locales: [{ id: 'zh-CN', name: '中文' }],
   resolve: mobileResolve(),
   alias: {
-    src: mobileSrc,
-    'lyrixi-mobile': mobileSrc,
-    'lyrixi-mobile/': `${mobileSrc}/`,
+    src: MOBILE_SRC,
+    'lyrixi-mobile': mobileEsm,
+    'lyrixi-mobile/': `${mobileEsm}/`,
   },
   conventionRoutes: {
     exclude: [new RegExp('index/components/')],
@@ -101,8 +98,7 @@ export default defineConfig({
     };`,
   ],
   chainWebpack(memo) {
-    memo.resolve.alias.set('src', mobileSrc)
-    memo.resolve.modules.prepend(mobileNodeModules)
-    configureSrcSvgWebpack(memo, MOBILE_ROOT)
+    memo.resolve.alias.set('src', MOBILE_SRC)
+    configureSrcSvgWebpack(memo, MOBILE_SRC)
   },
 })

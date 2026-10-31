@@ -1,0 +1,159 @@
+/*
+后置公共样式, 因为需要覆盖样式(例如hide等), 所以放在最后加载-----------------------------------------------------------------------------------------
+*/
+
+// 点击穿透
+.lyrixi-events-none {
+  pointer-events: none;
+}
+
+// 禁止长按选择
+.lyrixi-noselect {
+  user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+// 去除动画
+.lyrixi-transition-duration-0 {
+  transition-duration: 0ms;
+}
+
+.lyrixi-animation-duration-0 {
+  animation-duration: 0ms;
+}
+
+// block
+.lyrixi-block {
+  display: block;
+}
+
+.lyrixi-inline-block {
+  display: block;
+}
+
+.lyrixi-width-full {
+  width: 100%;
+}
+
+.lyrixi-height-full {
+  height: 100%;
+}
+
+// 显示与隐藏
+.lyrixi-hide {
+  display: none;
+}
+
+.lyrixi-hide-important {
+  display: none !important;
+}
+
+.lyrixi-hidden {
+  visibility: hidden;
+}
+
+.lyrixi-overflow-hidden,
+.lyrixi-container.lyrixi-overflow-hidden {
+  overflow: hidden;
+}
+
+.lyrixi-overflow-auto,
+.lyrixi-container.lyrixi-overflow-auto {
+  overflow: auto;
+}
+
+// 定位
+.lyrixi-position-absolute {
+  position: absolute;
+}
+
+// 撑满展示
+.lyrixi-full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // 不能加z-index,会导致业务page无法覆盖z-index
+}
+
+.lyrixi-position-relative {
+  position: relative;
+}
+
+// 清除浮动
+.lyrixi-clearfix::before,
+.lyrixi-clearfix::after {
+  display: table;
+  content: ' ';
+}
+
+.lyrixi-clearfix::after {
+  clear: both;
+}
+
+.lyrixi-clearfix {
+  zoom: 1;
+}
+
+.lyrixi-clear {
+  clear: both;
+}
+
+// 文字换行
+.lyrixi-white-space-nowrap {
+  white-space: nowrap;
+}
+
+.lyrixi-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.lyrixi-nowrap:extend(.lyrixi-ellipsis),
+.lyrixi-nowrap1:extend(.lyrixi-ellipsis),
+.lyrixi-nowrap2:extend(.lyrixi-ellipsis),
+.lyrixi-nowrap3:extend(.lyrixi-ellipsis) {
+  overflow: hidden;
+}
+
+.lyrixi-nowrap {
+  white-space: nowrap;
+}
+
+.lyrixi-nowrap1,
+.lyrixi-nowrap2,
+.lyrixi-nowrap3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.lyrixi-nowrap1 {
+  -webkit-line-clamp: 1;
+}
+
+.lyrixi-nowrap2 {
+  -webkit-line-clamp: 2;
+}
+
+.lyrixi-nowrap3 {
+  -webkit-line-clamp: 3;
+}
+
+// 文字排列
+.lyrixi-text-center {
+  text-align: center;
+}
+
+.lyrixi-text-right {
+  text-align: right;
+}
+
+.lyrixi-text-left {
+  text-align: left;
+}
+
+@import 'flex.less';
+@import 'size.less';
+@import 'border.less';
+@import 'color.less';

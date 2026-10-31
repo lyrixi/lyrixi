@@ -1,0 +1,126 @@
+@import '../../assets/variables.less';
+
+.lyrixi-stamp {
+  --lyrixi-stamp-color: var(--lyrixi-color-primary);
+
+  display: inline-flex;
+  transform: rotate(-15deg);
+  color: var(--lyrixi-stamp-color);
+  background-color: color-mix(in srgb, currentcolor, white 90%);
+  border: 6px solid color-mix(in srgb, currentcolor, white 60%);
+
+  .lyrixi-stamp-inner {
+    font-size: 14px;
+    letter-spacing: 0;
+    font-weight: 600;
+    border: 1px solid color-mix(in srgb, currentcolor, white 60%);
+  }
+
+  // 形状: 方形
+  &.lyrixi-stamp-rect {
+    padding: 5px 10px;
+
+    .lyrixi-stamp-inner {
+      padding: 0 15px;
+    }
+  }
+
+  // 形状: 圆形
+  &.lyrixi-stamp-round {
+    border-radius: 100%;
+    padding: 6px;
+    width: 50px;
+    height: 50px;
+
+    .lyrixi-stamp-inner {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+    }
+  }
+}
+
+// 颜色控制
+.lyrixi-stamp {
+  &.lyrixi-primary {
+    color: var(--lyrixi-color-primary);
+    background-color: var(--lyrixi-color-primary-lighten);
+    border-color: tint(@lyrixi-primary, 60%);
+
+    .lyrixi-stamp-inner {
+      border-color: tint(@lyrixi-primary, 60%);
+    }
+
+    // 等兼容性问题没有以后, 可以简化成这样:
+    // --lyrixi-stamp-color: var(--lyrixi-color-primary);
+  }
+
+  &.lyrixi-info {
+    color: var(--lyrixi-color-info);
+    background-color: var(--lyrixi-color-info-lighten);
+    border-color: tint(@lyrixi-info, 60%);
+
+    .lyrixi-stamp-inner {
+      border-color: tint(@lyrixi-info, 60%);
+    }
+
+    // 等兼容性问题没有以后, 可以简化成这样:
+    // --lyrixi-stamp-color: var(--lyrixi-color-info);
+  }
+
+  &.lyrixi-warning {
+    color: var(--lyrixi-color-warning);
+    background-color: var(--lyrixi-color-warning-lighten);
+    border-color: tint(@lyrixi-warning, 60%);
+
+    .lyrixi-stamp-inner {
+      border-color: tint(@lyrixi-warning, 60%);
+    }
+
+    // 等兼容性问题没有以后, 可以简化成这样:
+    // --lyrixi-stamp-color: var(--lyrixi-color-warning);
+  }
+
+  &.lyrixi-danger {
+    color: var(--lyrixi-color-danger);
+    background-color: var(--lyrixi-color-danger-lighten);
+    border-color: tint(@lyrixi-danger, 60%);
+
+    .lyrixi-stamp-inner {
+      border-color: tint(@lyrixi-danger, 60%);
+    }
+
+    // 等兼容性问题没有以后, 可以简化成这样:
+    // --lyrixi-stamp-color: var(--lyrixi-color-danger);
+  }
+
+  &.lyrixi-success {
+    color: var(--lyrixi-color-success);
+    background-color: var(--lyrixi-color-success-lighten);
+    border-color: tint(@lyrixi-success, 60%);
+
+    .lyrixi-stamp-inner {
+      border-color: tint(@lyrixi-success, 60%);
+    }
+
+    // 等兼容性问题没有以后, 可以简化成这样:
+    // --lyrixi-stamp-color: var(--lyrixi-color-success);
+  }
+
+  &.lyrixi-disabled {
+    color: var(--lyrixi-color-disabled);
+    background-color: var(--lyrixi-color-disabled-lighten);
+    border-color: tint(@lyrixi-disabled, 60%);
+
+    .lyrixi-stamp-inner {
+      border-color: tint(@lyrixi-disabled, 60%);
+    }
+
+    // 等兼容性问题没有以后, 可以简化成这样:
+    // --lyrixi-stamp-color: var(--lyrixi-color-disabled);
+  }
+}

@@ -1,0 +1,110 @@
+// Input
+.lyrixi-input-text,
+.lyrixi-input-textarea,
+.lyrixi-input-autoSize-textarea {
+  &:extend(.lyrixi-appearance-none);
+
+  display: block;
+  box-sizing: border-box;
+
+  &[disabled] {
+    color: #b2b2b2;
+    opacity: 1; // 解决iosdisabled颜色变淡的问题
+    -webkit-text-fill-color: #b2b2b2; // 解决iosdisabled颜色变淡的问题
+  }
+}
+
+.lyrixi-input-text,
+.lyrixi-input-textarea {
+  // 为了解决ios输入时白屏的BUG
+  position: relative;
+  flex: 1;
+  // 解决flex1失效的问题
+  min-width: 0;
+}
+
+.lyrixi-input-node {
+  position: relative;
+  display: flex;
+  align-items: center;
+  // 解决flex1失效的问题
+  min-width: 0;
+  flex: 1;
+}
+
+// Icon
+.lyrixi-input-icon + .lyrixi-input-node {
+  margin-left: 4px;
+}
+
+.lyrixi-input-node + .lyrixi-input-icon {
+  margin-left: 12px;
+}
+
+// Size: 尺寸与 Input.NumberBox 一致
+.input-text-size() {
+  // text
+  .lyrixi-input-text {
+    font-size: var(--lyrixi-input-font-size);
+    height: var(--lyrixi-input-text-height);
+  }
+
+  // textarea
+  .lyrixi-input-textarea {
+    font-size: var(--lyrixi-input-font-size);
+    line-height: var(--lyrixi-input-text-height);
+    height: var(--lyrixi-input-textarea-height);
+  }
+
+  // autoSize
+  .lyrixi-input-autoSize-textarea,
+  .lyrixi-input-autoSize-pre {
+    font-size: var(--lyrixi-input-font-size);
+    line-height: var(--lyrixi-input-text-height);
+    min-height: var(--lyrixi-input-text-height);
+  }
+
+  div.lyrixi-input-text.lyrixi-input-focus::after {
+    height: var(--lyrixi-input-focus-after-height);
+  }
+}
+
+.lyrixi-input.lyrixi-size-xl {
+  --lyrixi-input-font-size: var(--lyrixi-font-size-xl);
+  --lyrixi-input-text-height: 22px;
+  --lyrixi-input-textarea-height: 88px;
+  --lyrixi-input-focus-after-height: 20px;
+  .input-text-size();
+}
+
+.lyrixi-input.lyrixi-size-l {
+  --lyrixi-input-font-size: var(--lyrixi-font-size-l);
+  --lyrixi-input-text-height: 20px;
+  --lyrixi-input-textarea-height: 80px;
+  --lyrixi-input-focus-after-height: 18px;
+  .input-text-size();
+}
+
+.lyrixi-input.lyrixi-size-m {
+  --lyrixi-input-font-size: var(--lyrixi-font-size-m);
+  --lyrixi-input-text-height: 20px;
+  --lyrixi-input-textarea-height: 52px;
+  --lyrixi-input-focus-after-height: 16px;
+  .input-text-size();
+}
+
+.lyrixi-input.lyrixi-size-s {
+  --lyrixi-input-font-size: var(--lyrixi-font-size-s);
+  --lyrixi-input-text-height: 18px;
+  --lyrixi-input-textarea-height: 44px;
+  --lyrixi-input-focus-after-height: 14px;
+  .input-text-size();
+}
+
+.lyrixi-input.lyrixi-size-xs {
+  --lyrixi-input-font-size: var(--lyrixi-font-size-s);
+  --lyrixi-input-text-height: 18px;
+  --lyrixi-input-textarea-height: 40px;
+  --lyrixi-input-focus-after-height: 12px;
+  .input-text-size();
+}

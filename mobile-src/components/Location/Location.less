@@ -1,0 +1,74 @@
+@import 'Modal/LocationModal.less';
+
+/*
+ * 文本框
+ */
+
+// 定位控件
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// 加载中时图标不允许点击
+.lyrixi-location-combo.lyrixi-positioning {
+  .lyrixi-location-combo-icon {
+    pointer-events: none;
+  }
+}
+
+.lyrixi-location-combo-positioning,
+.lyrixi-location-combo-positioning textarea {
+  color: var(--lyrixi-color-tertiary);
+}
+
+.lyrixi-location-combo-error,
+.lyrixi-location-combo-error textarea {
+  color: var(--lyrixi-color-danger);
+}
+
+.lyrixi-location-combo-success,
+.lyrixi-location-combo-success textarea {
+  color: var(--lyrixi-color-info);
+}
+
+.lyrixi-location-combo-icon {
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  margin-left: 12px;
+}
+
+.lyrixi-location-combo-icon-location {
+  .lyrixi-flex();
+  .lyrixi-flex-align-center();
+  .lyrixi-flex-justify-center();
+
+  color: #aab1b8;
+  width: 18px;
+  height: 18px;
+
+  &.lyrixi-active {
+    animation-name: rotate360;
+    animation-duration: 500ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+.lyrixi-location-combo-icon-choose {
+  background-image: url(https://lyrixi.github.io/lyrixi/assets/images/location/location-choose.png);
+}
+
+.lyrixi-location-combo-icon-preview {
+  background-image: url(https://lyrixi.github.io/lyrixi/assets/images/location/location-choose.png);
+
+  &.lyrixi-disabled {
+    opacity: 0.5;
+  }
+}

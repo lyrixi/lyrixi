@@ -1,0 +1,29 @@
+// 自增高文本框
+.lyrixi-input-autoSize {
+  position: relative;
+  flex: 1;
+  // 解决flex1失效的问题
+  min-width: 0;
+}
+
+.lyrixi-input-autoSize-pre {
+  visibility: hidden;
+
+  span {
+    display: inline;
+  }
+}
+
+// 多行文本框容器
+.lyrixi-input-autoSize-textarea {
+  // position: relative; // 为了解决ios输入时白屏的BUG
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // 部分手机上宽度显示不全
+  width: 100%;
+  // div状态下没有滚动条，需要补充
+  overflow-y: auto;
+}

@@ -1,0 +1,110 @@
+.lyrixi-tabbar-slide {
+  max-width: 100%;
+  position: relative;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  color: var(--lyrixi-color-secondary);
+  background-color: var(--lyrixi-bg-default);
+  padding: 2px;
+  border-radius: 6px;
+  gap: 2px;
+
+  &.lyrixi-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+// 块级：占满一行
+.lyrixi-tabbar-slide.lyrixi-block {
+  display: flex;
+
+  .lyrixi-tabbar-slide-tab {
+    flex: auto;
+  }
+}
+
+.lyrixi-tabbar-slide-tab-description {
+  color: var(--lyrixi-color-secondary);
+  font-size: var(--lyrixi-font-size-s);
+}
+
+.lyrixi-tabbar-slide-tab {
+  position: relative;
+  flex: none;
+  padding: 4px 8px;
+  min-height: 26px;
+  min-width: 34px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  text-align: center;
+
+  &.lyrixi-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &.lyrixi-active {
+    background-color: white;
+    font-weight: 500;
+    border-radius: 6px;
+  }
+}
+
+.lyrixi-tabbar-slide-tab-name + .lyrixi-tabbar-slide-tab-description,
+.lyrixi-tabbar-slide-tab-description + .lyrixi-tabbar-slide-tab-name {
+  margin-top: var(--lyrixi-space-s);
+}
+
+// 尺寸
+.lyrixi-tabbar-slide.lyrixi-size-s {
+  border-radius: var(--lyrixi-radius-xs);
+  padding: 1px;
+  gap: 1px;
+
+  .lyrixi-tabbar-slide-tab {
+    padding: 2px 6px;
+    min-height: 22px;
+    min-width: 28px;
+  }
+
+  .lyrixi-tabbar-slide-tab.lyrixi-active {
+    border-radius: var(--lyrixi-radius-xs);
+  }
+
+  .lyrixi-tabbar-slide-tab-name {
+    font-size: var(--lyrixi-font-size-s);
+  }
+}
+
+.lyrixi-tabbar-slide.lyrixi-size-m {
+  .lyrixi-tabbar-slide-tab-name {
+    font-size: var(--lyrixi-font-size-m);
+  }
+}
+
+.lyrixi-tabbar-slide.lyrixi-size-l {
+  border-radius: var(--lyrixi-radius-l);
+  padding: 3px;
+  gap: 3px;
+
+  .lyrixi-tabbar-slide-tab {
+    padding: 6px 12px;
+    min-height: 32px;
+    min-width: 40px;
+  }
+
+  .lyrixi-tabbar-slide-tab.lyrixi-active {
+    border-radius: var(--lyrixi-radius-m);
+  }
+
+  .lyrixi-tabbar-slide-tab-name {
+    font-size: var(--lyrixi-font-size-l);
+  }
+}

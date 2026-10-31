@@ -1,0 +1,59 @@
+// Badge徽章角标
+.lyrixi-badge {
+  .lyrixi-inline-flex();
+  .lyrixi-flex-justify-center();
+  .lyrixi-flex-align-center();
+
+  position: relative;
+  min-width: 14px;
+  height: 14px;
+  overflow: hidden;
+  color: white;
+  // max-width: 24px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  white-space: nowrap;
+  text-align: center;
+  vertical-align: middle;
+  background: var(--lyrixi-color-danger);
+  border: 1px solid var(--lyrixi-color-danger);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 100%);
+  transform: scale(0.9);
+  transform-origin: 0;
+
+  // 图标内的badge
+  &.lyrixi-top,
+  &.lyrixi-right,
+  &.lyrixi-bottom,
+  &.lyrixi-left {
+    position: absolute;
+  }
+
+  &.lyrixi-top {
+    top: -4px;
+  }
+
+  &.lyrixi-right {
+    right: -6px;
+  }
+
+  // 框形
+  &.lyrixi-outline {
+    color: var(--lyrixi-color-danger);
+    background: white;
+    border: 1px solid var(--lyrixi-color-danger);
+  }
+
+  // 圆形badge
+  &.lyrixi-round {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+  }
+}
+
+.lyrixi-badge-max-width {
+  width: 24px;
+}

@@ -1,10 +1,14 @@
+import fs from 'node:fs'
 import path from 'node:path'
 
 import type Config from '@umijs/bundler-webpack/compiled/webpack-5-chain'
 
 /** Same SVG handling as lyrixi-mobile (Icon / v2 icons). */
-export function configureSrcSvgWebpack(memo: Config, mobileRoot: string) {
-  const v2IconsDir = path.resolve(mobileRoot, 'src/library/v2/icons')
+export function configureSrcSvgWebpack(memo: Config, mobileSrcRoot: string) {
+  const v2IconsDir = path.resolve(mobileSrcRoot, 'library/v2/icons')
+  if (!fs.existsSync(v2IconsDir)) {
+    return
+  }
   const svgrLoader = require.resolve('@umijs/bundler-webpack/dist/loader/svgr')
 
   if (memo.module.rules.has('svgr')) {

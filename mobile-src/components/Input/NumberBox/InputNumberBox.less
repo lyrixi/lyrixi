@@ -1,0 +1,96 @@
+// Size: 尺寸与 Input.Text 一致
+.numberbox-size() {
+  border-radius: var(--lyrixi-numberbox-radius);
+  width: var(--lyrixi-numberbox-width);
+  height: var(--lyrixi-numberbox-height);
+
+  .lyrixi-numberbox-button,
+  .lyrixi-input-node {
+    font-size: var(--lyrixi-numberbox-font-size);
+  }
+}
+
+.lyrixi-numberbox.lyrixi-size-xl {
+  --lyrixi-numberbox-radius: var(--lyrixi-radius-xl);
+  --lyrixi-numberbox-width: 198px;
+  --lyrixi-numberbox-height: 48px;
+  --lyrixi-numberbox-font-size: var(--lyrixi-font-size-l);
+  .numberbox-size();
+}
+
+.lyrixi-numberbox.lyrixi-size-l {
+  --lyrixi-numberbox-radius: var(--lyrixi-radius-l);
+  --lyrixi-numberbox-width: 168px;
+  --lyrixi-numberbox-height: 40px;
+  --lyrixi-numberbox-font-size: var(--lyrixi-font-size-m);
+  .numberbox-size();
+}
+
+.lyrixi-numberbox.lyrixi-size-m {
+  --lyrixi-numberbox-radius: var(--lyrixi-radius-m);
+  --lyrixi-numberbox-width: 148px;
+  --lyrixi-numberbox-height: 32px;
+  --lyrixi-numberbox-font-size: var(--lyrixi-font-size-s);
+  .numberbox-size();
+}
+
+.lyrixi-numberbox.lyrixi-size-s {
+  --lyrixi-numberbox-radius: var(--lyrixi-radius-s);
+  --lyrixi-numberbox-width: 128px;
+  --lyrixi-numberbox-height: 24px;
+  --lyrixi-numberbox-font-size: var(--lyrixi-font-size-xs);
+  .numberbox-size();
+}
+
+.lyrixi-numberbox.lyrixi-size-xs {
+  --lyrixi-numberbox-radius: var(--lyrixi-radius-xs);
+  --lyrixi-numberbox-width: 128px;
+  --lyrixi-numberbox-height: 20px;
+  --lyrixi-numberbox-font-size: var(--lyrixi-font-size-xs);
+  .numberbox-size();
+}
+
+.lyrixi-numberbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  background-color: white;
+  border: 1px solid var(--lyrixi-border-color);
+  box-sizing: border-box;
+}
+
+// 文本框
+.lyrixi-numberbox-input {
+  .lyrixi-input-node {
+    .lyrixi-input-text {
+      text-align: center;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+// 按钮
+.lyrixi-numberbox-button {
+  flex: none;
+  line-height: 100%;
+}
+
+.lyrixi-numberbox-button-minus {
+  left: 0;
+  border-right: 1px solid var(--lyrixi-border-color);
+}
+
+.lyrixi-numberbox-button-plus {
+  right: 0;
+  color: white;
+  background-color: var(--lyrixi-color-primary);
+  border-left: 1px solid var(--lyrixi-color-primary);
+}
+
+.lyrixi-numberbox[disabled] {
+  pointer-events: none;
+}

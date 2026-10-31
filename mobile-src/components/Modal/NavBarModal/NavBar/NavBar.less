@@ -1,0 +1,26 @@
+.lyrixi-modal-navbar {
+  .lyrixi-modal-navbar-button {
+    display: flex;
+    min-width: 60px;
+    justify-content: flex-start;
+  }
+
+  // 右边的按钮右对齐
+  .lyrixi-navbar-title ~ .lyrixi-modal-navbar-button {
+    justify-content: flex-end;
+  }
+}
+
+// 标题
+.lyrixi-modal-navbar-title {
+  .lyrixi-text-center();
+
+  font-size: var(--lyrixi-font-size-l);
+  left: 50px;
+  right: 50px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  flex: 1;
+}

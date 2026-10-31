@@ -1,0 +1,32 @@
+.lyrixi-select-main-result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.lyrixi-select-main {
+  position: relative;
+  overflow: auto;
+  .lyrixi-flex-1();
+
+  min-height: 200px;
+
+  // 列表样式
+  .lyrixi-list-divider {
+    font-size: var(--lyrixi-font-size-s);
+    padding: var(--lyrixi-space-s) var(--lyrixi-space-xxs);
+    color: var(--lyrixi-color-default);
+    margin: 0 var(--lyrixi-space-xl);
+    .lyrixi-border-b();
+  }
+
+  .lyrixi-list-item {
+    margin: 0 var(--lyrixi-space-xl);
+
+    &.lyrixi-active {
+      color: var(--lyrixi-color-primary);
+    }
+  }
+}

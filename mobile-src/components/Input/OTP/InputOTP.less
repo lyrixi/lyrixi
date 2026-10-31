@@ -1,0 +1,50 @@
+// OTP 输入框样式
+.lyrixi-input-otp {
+  --lyrixi-input-otp-item-width: 32px;
+  --lyrixi-input-otp-item-height: 32px;
+  --lyrixi-input-otp-item-radius: 4px;
+
+  position: relative;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  &.lyrixi-input-disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  .lyrixi-input-otp-item {
+    box-sizing: border-box;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--lyrixi-input-otp-item-width);
+    height: var(--lyrixi-input-otp-item-height);
+    border: 1px solid var(--lyrixi-border-color);
+    border-radius: var(--lyrixi-input-otp-item-radius);
+    text-align: center;
+    font-size: var(--lyrixi-font-size-xxl);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 0;
+
+    &:focus,
+    &.lyrixi-active {
+      border-color: var(--lyrixi-color-primary);
+    }
+  }
+
+  // 隐藏真实输入框 / NumberKeyboard：只负责唤起键盘，切换格子时不切换焦点
+  .lyrixi-input-otp-hidden-input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,47 @@
+// 全屏播放器
+.lyrixi-videoplayer-page {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #000;
+  .lyrixi-flex();
+  .lyrixi-flex-align-flex-end();
+}
+
+.lyrixi-videoplayer-header-close {
+  position: absolute;
+  z-index: 999;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  color: white;
+  background-color: rgba(255, 255, 255, 30%);
+  border-radius: 100%;
+  .lyrixi-flex();
+  .lyrixi-flex-align-center();
+  .lyrixi-flex-justify-center();
+
+  &::before {
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    transform: rotate(-45deg) translateX(1px);
+    content: '';
+  }
+
+  &::after {
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: white;
+    transform: rotate(45deg) translateX(-1px);
+    content: '';
+  }
+}

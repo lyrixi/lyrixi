@@ -1,0 +1,44 @@
+@import './ButtonNumber.less';
+@import './ButtonQuick.less';
+@import './ButtonAction.less';
+
+// 遮罩贴底、透明，避免罩灰键盘
+.lyrixi-mask-keyboard-number {
+  background-color: transparent;
+}
+
+// 数字键盘样式
+// 基于 .lyrixi-modal-animation 覆盖样式
+.lyrixi-modal-keyboard-number {
+  width: 100%;
+  background-color: var(--lyrixi-bg-default);
+}
+
+// 键盘行
+.lyrixi-keyboard-main-row {
+  display: flex;
+
+  .lyrixi-keyboard-button {
+    border-right: 1px solid var(--lyrixi-border-color);
+  }
+}
+
+.lyrixi-keyboard-main-row:not(:last-child) {
+  border-bottom: 1px solid var(--lyrixi-border-color);
+}
+
+// 按钮
+.lyrixi-keyboard-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--lyrixi-bg-button-default);
+  font-size: var(--lyrixi-font-size-xxl);
+  color: var(--lyrixi-color-default);
+  cursor: pointer;
+  user-select: none;
+
+  &:active {
+    background-color: var(--lyrixi-bg-default);
+  }
+}

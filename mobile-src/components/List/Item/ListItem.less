@@ -1,0 +1,167 @@
+// 选项
+.lyrixi-list-item-wrapper.lyrixi-card {
+  padding: 0 8px;
+
+  .lyrixi-list-item {
+    .lyrixi-border-none();
+  }
+}
+
+.lyrixi-list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 12px 4px;
+  gap: 8px;
+  .lyrixi-border-b();
+
+  // 竖向布局
+  &.lyrixi-vertical {
+    .lyrixi-list-item-main {
+      display: block;
+    }
+
+    .lyrixi-list-item-content,
+    .lyrixi-list-item-action {
+      margin-left: 0;
+      margin-top: var(--lyrixi-space-l);
+    }
+  }
+}
+
+// Compatiable old models. Don't use gap
+.lyrixi-bad-android,
+.lyrixi-bad-ios {
+  .lyrixi-list-item {
+    gap: initial;
+
+    & > div:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+// 禁用状态
+.lyrixi-list-item.lyrixi-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+// 选中状态
+.lyrixi-list-item.lyrixi-checked {
+  .lyrixi-list-item-meta-title {
+    font-weight: 500;
+  }
+}
+
+// 主体
+.lyrixi-list-item-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+// 元数据
+.lyrixi-list-item-meta {
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+}
+
+// 元数据-Image,Avatar
+.lyrixi-list-item-meta-image,
+.lyrixi-list-item-meta-avatar {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .lyrixi-avatar {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+  }
+
+  &.lyrixi-error {
+  }
+
+  &.lyrixi-success {
+    .lyrixi-avatar {
+      visibility: visible;
+    }
+  }
+}
+
+// 元数据-Image
+.lyrixi-list-item-meta-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+
+  .lyrixi-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+// 元数据-Avatar
+.lyrixi-list-item-meta-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+
+  .lyrixi-avatar {
+    border-radius: 100%;
+  }
+}
+
+// 元数据-内容
+.lyrixi-list-item-meta-image + .lyrixi-list-item-meta-avatar {
+  margin-left: var(--lyrixi-space-s);
+}
+
+.lyrixi-list-item-meta-image + .lyrixi-list-item-meta-content,
+.lyrixi-list-item-meta-avatar + .lyrixi-list-item-meta-content {
+  margin-left: 10px;
+}
+
+.lyrixi-list-item-meta-content {
+  flex: 1 1;
+  text-align: left;
+}
+
+.lyrixi-list-item-meta-title {
+  position: relative;
+  display: block;
+  pointer-events: none;
+}
+
+.lyrixi-list-item-meta-description {
+  color: var(--lyrixi-color-tertiary);
+  margin-top: 4px;
+}
+
+.lyrixi-list-item-meta-note {
+  // 高度100%
+  align-self: stretch;
+  color: var(--lyrixi-color-tertiary);
+  font-size: var(--lyrixi-font-size-s);
+}
+
+// 内容
+.lyrixi-list-item-content {
+  margin-left: var(--lyrixi-space-l);
+}
+
+// 操作
+.lyrixi-list-item-action {
+  margin-left: var(--lyrixi-space-l);
+}

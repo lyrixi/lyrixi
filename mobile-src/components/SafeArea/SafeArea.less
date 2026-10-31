@@ -1,0 +1,136 @@
+// SafeArea安全区域
+.lyrixi-safe-area {
+  // 定位
+  &.lyrixi-top {
+    top: var(--lyrixi-safe-area-inset-top);
+  }
+
+  &.lyrixi-bottom {
+    bottom: var(--lyrixi-safe-area-inset-bottom);
+  }
+
+  // 间距
+  &.lyrixi-padding-top {
+    padding-top: var(--lyrixi-safe-area-inset-top);
+  }
+
+  &.lyrixi-padding-bottom {
+    padding-bottom: var(--lyrixi-safe-area-inset-bottom);
+  }
+
+  &.lyrixi-margin-top {
+    padding-top: var(--lyrixi-safe-area-inset-top);
+  }
+
+  &.lyrixi-margin-bottom {
+    padding-bottom: var(--lyrixi-safe-area-inset-bottom);
+  }
+
+  // 高度
+  &.lyrixi-height-top {
+    height: var(--lyrixi-safe-area-inset-top);
+  }
+
+  &.lyrixi-height-bottom {
+    height: var(--lyrixi-safe-area-inset-bottom);
+  }
+
+  // 边框
+  &.lyrixi-border-top,
+  &.lyrixi-border-bottom {
+    border-style: solid;
+    border-width: 0;
+    border-color: transparent;
+  }
+
+  &.lyrixi-border-top {
+    border-top-width: var(--lyrixi-safe-area-inset-top);
+  }
+
+  &.lyrixi-border-bottom {
+    border-bottom-width: var(--lyrixi-safe-area-inset-bottom);
+  }
+
+  // before&after
+  &.before::before,
+  &.after::after {
+    content: '';
+    display: block;
+    flex: none;
+  }
+
+  &.before::before {
+    height: var(--lyrixi-safe-area-inset-top);
+  }
+
+  &.after::after {
+    height: var(--lyrixi-safe-area-inset-bottom);
+  }
+}
+
+// 清除安全区
+.lyrixi-clear-safe-area {
+  // 定位
+  &.lyrixi-top {
+    top: 0 !important;
+  }
+
+  &.lyrixi-bottom {
+    bottom: 0 !important;
+  }
+
+  // 间距
+  &.lyrixi-padding-top {
+    padding-top: 0 !important;
+  }
+
+  &.lyrixi-padding-bottom {
+    padding-bottom: 0 !important;
+  }
+
+  &.lyrixi-margin-top {
+    padding-top: 0 !important;
+  }
+
+  &.lyrixi-margin-bottom {
+    padding-bottom: 0 !important;
+  }
+
+  // 高度
+  &.lyrixi-height-top {
+    height: 0 !important;
+  }
+
+  &.lyrixi-height-bottom {
+    height: 0 !important;
+  }
+
+  // 边框
+  &.lyrixi-border-top {
+    border-top-width: 0 !important;
+  }
+
+  &.lyrixi-border-bottom {
+    border-bottom-width: 0 !important;
+  }
+
+  // before&after
+  &.before::before {
+    height: 0 !important;
+  }
+
+  &.after::after {
+    height: 0 !important;
+  }
+}
+
+// 自定义元素安全区
+[data-safe-area='border-bottom'] {
+  &:extend(.lyrixi-safe-area all);
+  &:extend(.lyrixi-safe-area.lyrixi-border-bottom all);
+}
+
+[data-safe-area='after'] {
+  &:extend(.lyrixi-safe-area all);
+  &:extend(.lyrixi-safe-area.after all);
+}

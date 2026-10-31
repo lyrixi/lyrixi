@@ -1,0 +1,99 @@
+// Selector
+// Select.Selector
+.lyrixi-selector {
+  display: grid;
+  grid-template-columns: repeat(var(--lyrixi-selector-columns), minmax(0, 1fr));
+  row-gap: 8px;
+  column-gap: 8px;
+  font-size: var(--lyrixi-font-size-l);
+  box-sizing: border-box;
+}
+
+.lyrixi-selector-item {
+  background-color: #f3f4f5;
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: 36px;
+  padding: 0 2px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  // 使用 Flexbox
+  flex-direction: column;
+  // 确保文本从上到下排列
+  justify-content: center;
+  // 垂直居中
+}
+
+.lyrixi-selector-item-name {
+  line-height: 18px;
+  max-height: 100%;
+  // 超出两行换行
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  // 限制显示两行
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 选中标记
+.lyrixi-selector-item-checked-mark {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid var(--lyrixi-color-primary);
+  border-left: 10px solid transparent;
+  border-right: 10px solid var(--lyrixi-color-primary);
+}
+
+.lyrixi-selector-item-checked-mark-icon {
+  width: 12px;
+  height: 12px;
+  transform: scale(0.7);
+  position: absolute;
+  left: -3px;
+  top: -2px;
+}
+
+// 选中
+.lyrixi-selector-item[data-checked='true'] {
+  background-color: white;
+  color: var(--lyrixi-color-primary);
+  border: 1px solid var(--lyrixi-color-primary);
+  font-weight: 500;
+
+  // background-color: var(--lyrixi-color-primary-lighten);
+  // color: var(--lyrixi-color-primary);
+  // .lyrixi-selector-item-checked-mark {
+  //   display: block;
+  // }
+}
+
+// 省略按钮
+.lyrixi-selector-item-ellipsis {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.lyrixi-selector-item-ellipsis-icon {
+  font-size: var(--lyrixi-font-size-s);
+  width: 12px;
+  height: 12px;
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lyrixi-selector-item-ellipsis-icon-expanded {
+  transform: rotate(180deg);
+}

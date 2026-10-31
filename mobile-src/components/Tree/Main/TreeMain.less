@@ -1,0 +1,30 @@
+@import './SearchControl/TreeSearchControl.less';
+@import './Footer/Tag/TreeFooterTag.less';
+
+.lyrixi-tree-page {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background-color: white !important;
+}
+
+.lyrixi-tree-breadcrumb {
+  flex-shrink: 0;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--lyrixi-border-color);
+}
+
+.lyrixi-tree-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--lyrixi-space-m);
+  padding: 6px 12px;
+  border-top: 1px solid var(--lyrixi-border-color);
+}
+
+.lyrixi-tree-footer-ok {
+  flex-shrink: 0;
+  min-width: 88px;
+}

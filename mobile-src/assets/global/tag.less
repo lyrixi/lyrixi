@@ -1,0 +1,161 @@
+/*
+前置公共样式-----------------------------------------------------------------------------------------
+*/
+// 兼容样式设置
+::input-placeholder {
+  color: var(--lyrixi-color-quaternary);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--lyrixi-color-quaternary);
+}
+
+// 清除默认样式
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
+  display: none;
+}
+
+// 解决在 ios 下点击 input 页面空白问题
+input {
+  transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+// 设置body样式
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, blinkmacsystemfont, 'Helvetica Neue', helvetica, 'segoe ui', arial,
+    roboto, 'PingFang SC', miui, 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+  color: var(--lyrixi-color-default);
+  // background-color: var(--lyrixi-bg-default);
+  font-size: var(--lyrixi-font-size-m);
+  word-wrap: break-word;
+  word-break: break-all;
+  touch-action: manipulation; // 移动端快速点击,代替FastClick
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0%); // ios点击时的半透明背景，设置它为透明色
+  text-size-adjust: none; // 禁止文字自适应大小
+  -webkit-touch-callout: none; // 禁用系统菜单
+  -webkit-overflow-scrolling: touch; // 平滑滚动
+}
+
+// 基础
+a {
+  color: #459df5;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+i {
+  font-style: normal;
+}
+
+a,
+i,
+span,
+label,
+small {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+button,
+input,
+select,
+option,
+textarea,
+pre {
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button,
+input[type='button'],
+input[type='submit'],
+input[type='reset'] {
+  // 为了兼容部分手机input[button]inline-box水平居中不工作的问题
+  display: inline-block;
+}
+
+textarea {
+  resize: none;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+}
+
+small {
+  color: #b6b6b6;
+  font-size: 80%;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a,
+label,
+:focus {
+  outline: 0 none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+dfn {
+  font-style: italic;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+br {
+  clear: both;
+}

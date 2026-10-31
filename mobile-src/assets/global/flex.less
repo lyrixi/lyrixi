@@ -1,0 +1,114 @@
+// Flex
+.lyrixi-flex {
+  display: flex;
+}
+
+.lyrixi-inline-flex {
+  display: inline-flex;
+}
+
+.lyrixi-flex-align-self-start {
+  align-self: flex-start;
+}
+
+.lyrixi-flex-initial {
+  flex: initial;
+}
+
+.lyrixi-flex-0 {
+  flex: 0;
+}
+
+.lyrixi-flex-none {
+  flex: none;
+}
+
+.lyrixi-flex-1 {
+  flex: 1;
+}
+
+// flex方向
+.lyrixi-flex-vertical {
+  flex-direction: column;
+}
+
+.lyrixi-flex-horizontal {
+  flex-direction: row;
+}
+
+.lyrixi-flex-vertical-reverse {
+  flex-direction: column-reverse;
+}
+
+.lyrixi-flex-horizontal-reverse {
+  flex-direction: row-reverse;
+}
+
+// flex内部水平对齐
+.lyrixi-flex-justify-flex-start {
+  justify-content: flex-start;
+}
+
+.lyrixi-flex-justify-center {
+  justify-content: center;
+}
+
+.lyrixi-flex-justify-flex-end {
+  justify-content: flex-end;
+}
+
+.lyrixi-flex-justify-space-between {
+  justify-content: space-between;
+}
+
+.lyrixi-flex-justify-space-around {
+  justify-content: space-around;
+}
+
+.lyrixi-flex-justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+// flex内部垂直对齐
+.lyrixi-flex-align-flex-start {
+  align-items: flex-start;
+}
+
+.lyrixi-flex-align-center {
+  align-items: center;
+}
+
+.lyrixi-flex-align-flex-end {
+  align-items: flex-end;
+}
+
+// flex允许换行
+// wrap={true}
+.lyrixi-flex-wrap {
+  flex-wrap: wrap;
+}
+
+// 带滚动功能的flex布局
+// wrap="scroll"(horizontal)
+.lyrixi-flex-scroll {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  // -webkit-overflow-scrolling: touch;
+}
+
+.lyrixi-flex-scroll.lyrixi-flex-horizontal > * {
+  // 水平滚动时，子项不要被压缩，否则可能无法产生溢出
+  flex-shrink: 0;
+}
+
+// wrap="scroll"(vertical)
+.lyrixi-flex-scroll.lyrixi-flex-vertical {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.lyrixi-flex-scroll.lyrixi-flex-vertical > * {
+  // 纵向滚动时，子项不要被压缩导致高度异常
+  flex-shrink: 0;
+}

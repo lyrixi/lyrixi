@@ -1,0 +1,95 @@
+/*
+* Main
+*/
+.lyrixi-page-main {
+  // 绝对定布局
+  // position:absolute;
+  // top: 0;
+  // bottom: 0;
+  // left: 0;
+  // right: 0;
+  // overflow: auto;
+
+  // flex布局
+  position: relative;
+  overflow: auto;
+  .lyrixi-flex-1();
+}
+
+// 下拉刷新-下拉或触底刷新样式
+@keyframes page-main-pull-animation-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+// 下拉刷新-pull类型(头部和底部刷新同一个样式)
+.lyrixi-page-main-pull-push {
+  display: flex;
+  align-items: flex-end;
+  // 解决在flex父级下高度无法撑开的问题
+  flex: none;
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  color: var(--lyrixi-color-tertiary);
+}
+
+.lyrixi-page-main-pull-push-wrapper {
+  .lyrixi-flex();
+  .lyrixi-flex-align-center();
+  .lyrixi-flex-justify-center();
+
+  width: 100%;
+  height: 40px;
+  font-size: 13px;
+}
+
+.lyrixi-page-main-pull-push-text {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+}
+
+// 按照ue要求改为不显示图标的样式(隐藏图标)
+.lyrixi-page-main-pull-push-icon {
+  // UI要求去掉图标，此处隐藏起来
+  display: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-image: url(https://lyrixi.github.io/lyrixi/assets/images/page/pull.png);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  transition-timing-function: ease-in;
+  transition-duration: var(--lyrixi-animation-duration);
+  transition-property: transform;
+
+  &.lyrixi-page-main-pull-push-icon-up {
+    transform: rotate(0deg);
+  }
+
+  &.lyrixi-page-main-pull-push-icon-down {
+    transform: rotate(180deg);
+  }
+
+  &.lyrixi-page-main-pull-push-icon-none {
+    display: none;
+  }
+
+  &.lyrixi-page-main-pull-push-icon-loading {
+    background-position: left bottom;
+    transition-duration: 0ms;
+    animation: page-main-pull-animation-spinner 1000ms infinite linear;
+  }
+}

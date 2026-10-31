@@ -1,0 +1,45 @@
+// ToolBar.List combo
+.lyrixi-toolbar-dropdown-combo {
+  &.lyrixi-auto-fit {
+    .lyrixi-toolbar-dropdown-combo-title {
+      flex: initial;
+    }
+  }
+
+  &.lyrixi-disabled {
+    opacity: 0.5;
+  }
+
+  &.lyrixi-expand {
+    .lyrixi-toolbar-dropdown-combo-arrow {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.lyrixi-toolbar-dropdown-combo-title {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.lyrixi-toolbar-dropdown-combo-arrow {
+  transform: rotate(180deg);
+  transition: all 0.2s ease;
+}
+
+.lyrixi-mask-toolbar-dropdown {
+}
+
+.lyrixi-modal-toolbar-dropdown {
+  max-height: 95%;
+
+  .lyrixi-list {
+    margin: 0 8px;
+  }
+
+  .lyrixi-list-item.lyrixi-active {
+    color: var(--lyrixi-color-primary);
+  }
+}

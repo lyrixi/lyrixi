@@ -1,0 +1,111 @@
+// Tooltip
+.lyrixi-mask-tooltip {
+  z-index: 2;
+  background-color: transparent;
+}
+
+.lyrixi-tooltip {
+  position: absolute;
+  display: block;
+  // 覆盖 .lyrixi-modal-animation 的 overflow: auto，避免裁切箭头
+  overflow: visible;
+  background-color: #fff;
+  border-color: var(--lyrixi-border-color);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  visibility: visible;
+}
+
+// 内容
+.lyrixi-tooltip-content {
+  font-size: 14px;
+}
+
+// 箭头
+.lyrixi-tooltip-arrow-outer,
+.lyrixi-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+}
+
+// 箭头竖向位置
+.lyrixi-top-center,
+.lyrixi-top-right,
+.lyrixi-top-left {
+  // 箭头
+  .lyrixi-tooltip-arrow {
+    top: -11px;
+    border-bottom-color: white;
+  }
+
+  // 箭头边框
+  .lyrixi-tooltip-arrow-outer {
+    top: -12px;
+    border-bottom-color: var(--lyrixi-border-color);
+  }
+}
+
+.lyrixi-bottom-center,
+.lyrixi-bottom-right,
+.lyrixi-bottom-left {
+  // 箭头
+  .lyrixi-tooltip-arrow {
+    bottom: -11px;
+    border-top-color: white;
+  }
+
+  // 箭头边框
+  .lyrixi-tooltip-arrow-outer {
+    bottom: -12px;
+    border-top-color: var(--lyrixi-border-color);
+  }
+}
+
+// 箭头横向位置
+.lyrixi-top-center,
+.lyrixi-bottom-center {
+  // 箭头
+  .lyrixi-tooltip-arrow {
+    left: 50%;
+    margin-left: -6px;
+  }
+
+  // 箭头边框
+  .lyrixi-tooltip-arrow-outer {
+    left: 50%;
+    margin-left: -6px;
+  }
+}
+
+.lyrixi-top-right,
+.lyrixi-bottom-right {
+  // 箭头
+  .lyrixi-tooltip-arrow {
+    right: 12px;
+  }
+
+  // 箭头边框
+  .lyrixi-tooltip-arrow-outer {
+    right: 12px;
+  }
+}
+
+.lyrixi-top-left,
+.lyrixi-bottom-left {
+  // 箭头
+  .lyrixi-tooltip-arrow {
+    left: 12px;
+  }
+
+  // 箭头边框
+  .lyrixi-tooltip-arrow-outer {
+    left: 12px;
+  }
+}

@@ -1,0 +1,57 @@
+// Result
+.lyrixi-result {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+
+  &.lyrixi-full {
+    background-color: var(--lyrixi-bg-default);
+  }
+}
+
+// 不能设置margin: -15% auto 0; 在弹窗中会把头遮住
+.lyrixi-result-image {
+  width: 160px;
+  margin: 0 auto;
+}
+
+.lyrixi-result-image-empty,
+.lyrixi-result-image-500 {
+  width: 160px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.lyrixi-result-image-empty {
+  background-image: url(https://lyrixi.github.io/lyrixi/assets/images/result/empty.png);
+}
+
+.lyrixi-result-image-500 {
+  background-image: url(https://lyrixi.github.io/lyrixi/assets/images/result/error.png);
+}
+
+.lyrixi-result-title {
+  color: var(--lyrixi-color-tertiary);
+  margin: 12px 20px 0;
+  text-align: center;
+  font-size: var(--lyrixi-font-size-s);
+}
+
+.lyrixi-result-description {
+  color: var(--lyrixi-color-tertiary);
+  margin: 6px 20px 0;
+  text-align: center;
+  font-size: var(--lyrixi-font-size-s);
+}
+
+// 暂不使用, 根据后续使用情况决定是否删除此样式
+.lyrixi-result-button {
+  display: flex;
+  height: 40px;
+  margin: 10px 12px;
+  border-radius: 10px;
+  font-size: var(--lyrixi-font-size-l);
+}

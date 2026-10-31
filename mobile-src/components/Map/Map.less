@@ -1,0 +1,85 @@
+@import 'adapter/LeafletRenderer/LocationControl/MapLocationControl.less';
+@import 'adapter/LeafletRenderer/NearbyControl/MapNearbyControl.less';
+@import 'adapter/LeafletRenderer/NearbyControl/Current/MapNavigation.less';
+@import 'adapter/LeafletRenderer/SearchControl/MapSearchControl.less';
+@import 'adapter/LeafletRenderer/ZoomControl/MapZoomControl.less';
+@import 'pages/MapChoosePage/MapChoosePage.less';
+
+.lyrixi-map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+
+  // 插件: Leaflet, 降低地图瓦片图层级别
+  .leaflet-pane {
+    z-index: 1;
+  }
+
+  // 完全隐藏logo, 会违反Google的使用条款, 请自行修改
+  .leaflet-bottom.leaflet-left {
+    display: none;
+  }
+
+  .leaflet-bottom.leaflet-right {
+    display: none;
+  }
+}
+
+// 地图报错提示
+.lyrixi-map-container-result,
+.lyrixi-map-main-result {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.lyrixi-map-container-result {
+  background-color: var(--lyrixi-bg-default);
+}
+
+// Modal
+.lyrixi-modal-map {
+  height: 95%;
+  max-height: 95% !important;
+}
+
+// Main
+.lyrixi-map-main {
+  position: relative;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+// 地图容器
+.lyrixi-map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+// 当前地图
+.lyrixi-map-api-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  * {
+    pointer-events: none;
+  }
+}

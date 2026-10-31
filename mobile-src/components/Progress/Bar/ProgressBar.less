@@ -1,0 +1,51 @@
+.lyrixi-progress-bar {
+  position: relative;
+  display: block;
+
+  --lyrixi-progress-fill-color: #1890ff;
+  --lyrixi-progress-bg-color: #f0f0f0;
+  --lyrixi-progress-track-width: 8px;
+  --lyrixi-progress-animation-duration: 0.3s;
+  --lyrixi-progress-animation-timing: ease;
+
+  box-sizing: border-box;
+  background: var(--lyrixi-progress-bg-color);
+  height: var(--lyrixi-progress-track-width);
+  border-radius: calc(var(--lyrixi-progress-track-width) / 2);
+  overflow: hidden;
+
+  &.lyrixi-primary {
+    --lyrixi-progress-fill-color: var(--lyrixi-color-primary);
+  }
+
+  &.lyrixi-info {
+    --lyrixi-progress-fill-color: var(--lyrixi-color-info);
+  }
+
+  &.lyrixi-warning {
+    --lyrixi-progress-fill-color: var(--lyrixi-color-warning);
+  }
+
+  &.lyrixi-danger {
+    --lyrixi-progress-fill-color: var(--lyrixi-color-danger);
+  }
+
+  &.lyrixi-success {
+    --lyrixi-progress-fill-color: var(--lyrixi-color-success);
+  }
+
+  .lyrixi-progress-bar-fill {
+    height: 100%;
+    background: var(--lyrixi-progress-fill-color);
+    border-radius: calc(var(--lyrixi-progress-track-width) / 2);
+    transition: width var(--lyrixi-progress-animation-duration, 0.3s)
+      var(--lyrixi-progress-animation-timing, ease);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 12px;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

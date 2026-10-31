@@ -1,0 +1,32 @@
+.lyrixi-form {
+}
+
+.lyrixi-form-item {
+  padding: var(--lyrixi-space-l) 0;
+  position: relative;
+  .lyrixi-border-b();
+}
+
+.lyrixi-form-label {
+  align-items: center;
+  padding-right: var(--lyrixi-space-m);
+  overflow: hidden;
+  color: var(--lyrixi-color-secondary);
+  font-size: var(--lyrixi-font-size-l);
+
+  // label 占满一行时，与下方 field 间距 8px
+  &.lyrixi-col-24 {
+    margin-bottom: var(--lyrixi-space-s);
+  }
+}
+
+.lyrixi-form-field {
+  position: relative;
+  min-width: 0;
+  padding-right: var(--lyrixi-space-m);
+
+  // 消除控件间距
+  .lyrixi-select-combo-tags {
+    padding: 0;
+  }
+}

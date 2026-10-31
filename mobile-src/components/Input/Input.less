@@ -1,0 +1,32 @@
+@import 'AutoSize/InputAutoSize.less';
+@import 'Icon/InputIcon.less';
+@import 'Node/InputNode.less';
+@import 'NumberBox/InputNumberBox.less';
+@import 'OTP/InputOTP.less';
+@import 'PasswordStrength/InputPasswordStrength.less';
+@import 'Range/InputRange.less';
+@import 'Rate/InputRate.less';
+@import 'Select/InputSelect.less';
+@import 'Text/InputText.less';
+@import 'Url/InputUrl.less';
+
+// Input输入框控件
+// 输入框容器
+.lyrixi-input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  // 解决flex1失效的问题
+  min-width: 0;
+
+  &.lyrixi-input-disabled {
+    color: rgba(0, 0, 0, 25%);
+    border-color: #d9d9d9;
+
+    .lyrixi-input-icon-clear {
+      display: none;
+    }
+  }
+}

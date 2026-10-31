@@ -1,0 +1,59 @@
+@import 'AccordionGroup.less';
+@import 'AccordionTransition/AccordionTransition.less';
+
+.lyrixi-accordion {
+}
+
+// Header
+.lyrixi-accordion-header {
+  display: flex;
+  align-items: center;
+  .lyrixi-border-b();
+}
+
+.lyrixi-accordion-header-title {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  font-size: var(--lyrixi-font-size-m);
+  color: #6a737c;
+  flex: 1;
+}
+
+.lyrixi-accordion-arrow {
+  transition: all 0.3s ease;
+  color: var(--lyrixi-color-quaternary);
+}
+
+// Footer
+.lyrixi-accordion-ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+}
+
+.lyrixi-accordion-ellipsis-title {
+}
+
+.lyrixi-accordion-ellipsis-title + .lyrixi-accordion-arrow {
+  margin-left: 4px;
+}
+
+// Accordion
+.lyrixi-accordion.lyrixi-active {
+  .lyrixi-accordion-arrow {
+    transform: rotate(180deg);
+  }
+}
+
+.lyrixi-accordion-arrow + .lyrixi-accordion-header-title {
+  margin-left: 8px;
+}
+
+// Main
+.lyrixi-accordion-main {
+  will-change: height;
+  overflow: hidden;
+  box-sizing: border-box;
+}

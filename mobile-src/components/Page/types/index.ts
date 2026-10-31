@@ -1,0 +1,5 @@
+export * from './Page.Aside.types'
+export * from './Page.Footer.types'
+export * from './Page.Header.types'
+export * from './Page.Main.types'
+export * from './Page.types'

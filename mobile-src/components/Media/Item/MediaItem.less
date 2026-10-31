@@ -1,0 +1,34 @@
+@import 'Delete/ImageItemDelete.less';
+@import 'Img/ImageItemImg.less';
+@import 'Reload/ImageItemReload.less';
+@import 'Ellipsis/MediaItemEllipsis.less';
+
+// 单个照片
+.lyrixi-media-item {
+  position: relative;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 8px;
+  width: 85px;
+  height: 85px;
+
+  // 上传中
+  &.lyrixi-uploading {
+    // 显示转圈
+    .lyrixi-media-uploading {
+      display: block;
+    }
+  }
+
+  // 上传失败
+  &.lyrixi-error {
+    // 显示重转
+    .lyrixi-media-reload {
+      display: flex;
+    }
+  }
+}

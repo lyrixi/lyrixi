@@ -1,0 +1,22 @@
+// Icon size
+.lyrixi-steps-item.lyrixi-horizontal.lyrixi-center {
+  .lyrixi-steps-item-rail {
+    top: calc(var(--lyrixi-steps-icon-size) / 2);
+    left: calc(50% + calc(var(--lyrixi-steps-icon-size) / 2));
+    width: calc(100% - var(--lyrixi-steps-icon-size));
+  }
+}
+
+.lyrixi-steps-item.lyrixi-horizontal.lyrixi-center {
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  .lyrixi-steps-item-rail {
+    height: 1px;
+    position: absolute;
+    background-color: var(--lyrixi-border-color);
+  }
+}

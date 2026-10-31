@@ -1,0 +1,107 @@
+// Toast
+// 是否允许点击
+.lyrixi-toast-propagation {
+  pointer-events: none;
+}
+
+// toast遮罩, 透明
+.lyrixi-mask-toast {
+  z-index: 999;
+  background-color: transparent;
+}
+
+// toast框
+.lyrixi-toast {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 1;
+  pointer-events: none;
+
+  // 底部类型
+  &.lyrixi-bottom {
+    bottom: -100px;
+    transform: translate3d(0, -150px, 0);
+  }
+
+  // 头部类型
+  &.lyrixi-top {
+    top: 44px;
+    visibility: visible;
+  }
+
+  &.lyrixi-top,
+  &.lyrixi-bottom {
+    .lyrixi-toast-wrapper {
+      .lyrixi-flex-align-center();
+    }
+
+    .lyrixi-toast-icon {
+      width: 16px;
+      height: 16px;
+      font-size: 16px;
+    }
+
+    .lyrixi-toast-content {
+      .lyrixi-flex-1();
+      // .lyrixi-nowrap;
+      // .lyrixi-ellipsis;
+      // height: 16px; // 上下类型的左图标为16px,所以文字也设置成16px与之匹配
+      // line-height: 16px;
+    }
+
+    .lyrixi-toast-icon + .lyrixi-toast-content {
+      margin-left: 2px;
+    }
+  }
+
+  // 中间类型
+  &.lyrixi-middle {
+    top: 50%;
+    transform: translateY(-50%);
+    visibility: visible;
+
+    .lyrixi-toast-wrapper {
+      .lyrixi-flex-vertical();
+      .lyrixi-flex-align-center();
+    }
+
+    .lyrixi-toast-icon {
+      width: 36px;
+      height: 36px;
+      font-size: 36px;
+    }
+
+    .lyrixi-toast-content {
+      text-align: center;
+    }
+
+    .lyrixi-toast-icon + .lyrixi-toast-content {
+      margin-top: 8px;
+    }
+  }
+}
+
+// toast框画布
+.lyrixi-toast-wrapper {
+  .lyrixi-inline-flex();
+
+  max-width: 50%;
+  padding: 12px;
+  color: white;
+  line-height: 0;
+  background-color: rgba(0, 0, 0, 60%);
+  border-radius: 6px;
+}
+
+// toast图标
+.lyrixi-toast-icon {
+  display: block;
+  background-size: cover;
+}
+
+.lyrixi-toast-content {
+  display: block;
+  font-size: var(--lyrixi-font-size-m);
+  line-height: 22px;
+}

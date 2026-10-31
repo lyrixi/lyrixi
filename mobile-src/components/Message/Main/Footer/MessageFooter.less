@@ -1,0 +1,24 @@
+// Footer
+.lyrixi-message-footer {
+  display: flex;
+  position: relative;
+  border-top: 1px solid var(--lyrixi-border-color);
+
+  // horizontal
+  &[data-direction='horizontal'] {
+    flex-direction: row;
+
+    .lyrixi-button + .lyrixi-button {
+      border-left: 1px solid var(--lyrixi-border-color);
+    }
+  }
+
+  // vertical
+  &[data-direction='vertical'] {
+    flex-direction: column;
+
+    .lyrixi-button + .lyrixi-button {
+      border-top: 1px solid var(--lyrixi-border-color);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+// 照片上传按钮
+.lyrixi-media-choose {
+  .lyrixi-flex();
+  .lyrixi-flex-align-center();
+  .lyrixi-flex-justify-center();
+
+  background-color: var(--lyrixi-bg-default);
+  color: #c2c6cd;
+}
+
+// File input clicked by js
+.lyrixi-media-choose-input-file {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  pointer-events: none;
+}
+
+.lyrixi-media-choose-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 22px;
+  height: 22px;
+  font-size: 22px;
+}

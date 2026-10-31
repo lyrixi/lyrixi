@@ -13,6 +13,7 @@
     },
     "dependencies": {
       "dumi-theme-mobile": "^2.3.5",
+      "lyrixi-mobile": "^0.1.4",
       "react": "^19.1.0",
       "react-dom": "^19.1.0"
     },
@@ -55,7 +56,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "preset",
@@ -72,7 +73,7 @@
             0
           ]
         },
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -102,7 +103,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -116,10 +117,10 @@
       "time": {
         "hooks": {
           "modifyAppData": [
-            7
+            21
           ]
         },
-        "register": 7
+        "register": 9
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1068,7 +1069,7 @@
             1
           ]
         },
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1081,7 +1082,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1094,7 +1095,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 34
+        "register": 38
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1107,7 +1108,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 9
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1180,7 +1181,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 11
+        "register": 13
       },
       "type": "plugin",
       "path": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/@umijs/preset-umi/dist/features/mock/mock.js",
@@ -1192,7 +1193,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1244,7 +1245,7 @@
       "time": {
         "hooks": {
           "modifyConfig": [
-            1
+            0
           ]
         },
         "register": 0
@@ -1350,7 +1351,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "type": "plugin",
       "path": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/@umijs/preset-umi/dist/features/routeProps/routeProps.js",
@@ -1375,7 +1376,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1439,7 +1440,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 7
+        "register": 9
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1452,7 +1453,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "type": "plugin",
       "path": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/@umijs/preset-umi/dist/features/test/test.js",
@@ -1476,7 +1477,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 185
+        "register": 223
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1556,7 +1557,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "config",
       "type": "plugin",
@@ -1605,7 +1606,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 10
+        "register": 13
       },
       "type": "plugin",
       "path": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/@umijs/preset-umi/dist/features/routePreloadOnLoad/routePreloadOnLoad.js",
@@ -1617,7 +1618,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1643,7 +1644,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 13
+        "register": 15
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1656,7 +1657,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 5
+        "register": 8
       },
       "type": "plugin",
       "path": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/@umijs/preset-umi/dist/commands/dev/dev.js",
@@ -1798,7 +1799,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1837,7 +1838,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1902,7 +1903,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1915,7 +1916,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -1954,7 +1955,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2084,7 +2085,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2099,7 +2100,7 @@
       },
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "type": "plugin",
       "path": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/dumi/compiled/@umijs/plugins/index.js",
@@ -2145,10 +2146,10 @@
             0,
             0,
             0,
-            0
+            1
           ]
         },
-        "register": 2
+        "register": 3
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2162,16 +2163,16 @@
       "time": {
         "hooks": {
           "modifyDefaultConfig": [
-            1
+            0
           ],
           "addLayouts": [
             0
           ],
           "modifyRoutes": [
-            1
+            15
           ]
         },
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2188,7 +2189,7 @@
             0
           ]
         },
-        "register": 1
+        "register": 0
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2226,11 +2227,11 @@
             0
           ],
           "modifyAppData": [
-            0,
+            1,
             3
           ]
         },
-        "register": 6
+        "register": 8
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2324,7 +2325,7 @@
       "config": {},
       "time": {
         "hooks": {},
-        "register": 0
+        "register": 1
       },
       "enableBy": "register",
       "type": "plugin",
@@ -2368,27 +2369,27 @@
     ],
     "resolve": {
       "docDirs": [
-        "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src-docs"
+        "src-docs"
       ],
       "atomDirs": [
         {
           "type": "components",
-          "dir": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src/components"
+          "dir": "mobile-src/components"
         },
         {
           "type": "examples",
-          "dir": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src/examples"
+          "dir": "node_modules/lyrixi-mobile/src/examples"
         },
         {
           "type": "utils",
-          "dir": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src/utils"
+          "dir": "mobile-src/utils"
         }
       ]
     },
     "alias": {
-      "src": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src",
-      "lyrixi-mobile": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src",
-      "lyrixi-mobile/": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src/"
+      "src": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src",
+      "lyrixi-mobile": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/esm",
+      "lyrixi-mobile/": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/esm/"
     },
     "conventionRoutes": {
       "exclude": [
@@ -2457,9 +2458,9 @@
       "react-dom": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/react-dom",
       "react-router": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/react-router",
       "react-router-dom": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/react-router-dom",
-      "src": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src",
-      "lyrixi-mobile": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src",
-      "lyrixi-mobile/": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src/",
+      "src": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src",
+      "lyrixi-mobile": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/esm",
+      "lyrixi-mobile/": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/esm/",
       "@": "/Users/jamie/Documents/development/lyrixi/lyrixi",
       "@@": "/Users/jamie/Documents/development/lyrixi/lyrixi/.dumi/tmp-production",
       "regenerator-runtime": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/regenerator-runtime",
@@ -2541,20 +2542,20 @@
     },
     "resolve": {
       "docDirs": [
-        "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src-docs"
+        "src-docs"
       ],
       "atomDirs": [
         {
           "type": "components",
-          "dir": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src/components"
+          "dir": "mobile-src/components"
         },
         {
           "type": "examples",
-          "dir": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src/examples"
+          "dir": "node_modules/lyrixi-mobile/src/examples"
         },
         {
           "type": "utils",
-          "dir": "/Users/jamie/Documents/development/lyrixi/lyrixi-mobile/src/utils"
+          "dir": "mobile-src/utils"
         }
       ],
       "codeBlockMode": "active",
@@ -2656,9 +2657,1709 @@
       "parentId": "DocLayout",
       "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/.dumi/pages/index.tsx",
       "absPath": "/",
-      "__content": "import { Link } from 'dumi'\n\nimport './index.less'\n\nexport default function HomePage() {\n  return (\n    <div className=\"lyrixi-home\">\n      <section className=\"lyrixi-home__hero\">\n        <img\n          className=\"lyrixi-home__hero-art\"\n          src=\"/lyrixi/brand/loading-hero.png\"\n          alt=\"Lyrixi\"\n        />\n        <p className=\"lyrixi-home__slogan\">你只要负责自律即可</p>\n        <h1 className=\"lyrixi-home__title\">lyrixi-mobile</h1>\n        <p className=\"lyrixi-home__tagline\">React 19 移动端 UI 组件库</p>\n        <div className=\"lyrixi-home__actions\">\n          <a className=\"lyrixi-home__btn lyrixi-home__btn--primary\" href=\"#install\">\n            开始安装\n          </a>\n          <Link className=\"lyrixi-home__btn lyrixi-home__btn--secondary\" to=\"/components/button\">\n            浏览组件\n          </Link>\n        </div>\n      </section>\n\n      <section className=\"lyrixi-home__section\" id=\"install\">\n        <h2>环境安装</h2>\n        <p>使用 npm 安装（需 React / React DOM）：</p>\n        <pre>\n          <code>{`npm install lyrixi-mobile`}</code>\n        </pre>\n        <h2>样式</h2>\n        <pre>\n          <code>{`@import 'lyrixi-mobile/assets/index.less';`}</code>\n        </pre>\n        <h2>快速上手</h2>\n        <pre>\n          <code>{`import { Button } from 'lyrixi-mobile'\n\nexport default () => <Button className=\"primary\">PRESS ME</Button>`}</code>\n        </pre>\n      </section>\n    </div>\n  )\n}\n",
+      "__content": "import { Link } from 'dumi'\n\nimport './index.less'\n\nexport default function HomePage() {\n  return (\n    <div className=\"lyrixi-home\">\n      <section className=\"lyrixi-home__hero\">\n        <img\n          className=\"lyrixi-home__hero-art\"\n          src=\"/lyrixi/brand/logo-loading.png\"\n          alt=\"Lyrixi\"\n        />\n        <p className=\"lyrixi-home__slogan\">更懂你的前端专家</p>\n        <h1 className=\"lyrixi-home__title\">lyrixi-mobile</h1>\n        <p className=\"lyrixi-home__tagline\">React 19 移动端 UI 组件库</p>\n        <div className=\"lyrixi-home__actions\">\n          <a className=\"lyrixi-home__btn lyrixi-home__btn--primary\" href=\"#install\">\n            开始安装\n          </a>\n          <Link className=\"lyrixi-home__btn lyrixi-home__btn--secondary\" to=\"/components/button\">\n            浏览组件\n          </Link>\n        </div>\n      </section>\n\n      <section className=\"lyrixi-home__section\" id=\"install\">\n        <h2>AI文档初始化</h2>\n        <pre>\n          <code>{`npx lyrixi-mobile`}</code>\n        </pre>\n        <h2>环境安装</h2>\n        <p>使用 npm 安装（需 React / React DOM）：</p>\n        <pre>\n          <code>{`npm install lyrixi-mobile`}</code>\n        </pre>\n        <h2>样式</h2>\n        <pre>\n          <code>{`@import 'lyrixi-mobile/assets/index.less';`}</code>\n        </pre>\n        <h2>快速上手</h2>\n        <pre>\n          <code>{`import { Button } from 'lyrixi-mobile'\n\nexport default () => <Button className=\"primary\">PRESS ME</Button>`}</code>\n        </pre>\n      </section>\n    </div>\n  )\n}\n",
       "__isJSFile": true,
       "__absFile": "/Users/jamie/Documents/development/lyrixi/lyrixi/.dumi/pages/index.tsx"
+    },
+    "src-docs/components/global-styles.en-US": {
+      "path": "components/global-styles/en--us",
+      "id": "src-docs/components/global-styles.en-US",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/components/global-styles.en-US.md",
+      "absPath": "/components/global-styles/en--us"
+    },
+    "src-docs/components/global-styles.zh-CN": {
+      "path": "components/global-styles",
+      "id": "src-docs/components/global-styles.zh-CN",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/components/global-styles.zh-CN.md",
+      "absPath": "/components/global-styles"
+    },
+    "src-docs/components/global-props.en-US": {
+      "path": "components/global-props/en--us",
+      "id": "src-docs/components/global-props.en-US",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/components/global-props.en-US.md",
+      "absPath": "/components/global-props/en--us"
+    },
+    "src-docs/components/global-props.zh-CN": {
+      "path": "components/global-props",
+      "id": "src-docs/components/global-props.zh-CN",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/components/global-props.zh-CN.md",
+      "absPath": "/components/global-props"
+    },
+    "src-docs/components/install.en-US": {
+      "path": "components/install/en--us",
+      "id": "src-docs/components/install.en-US",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/components/install.en-US.md",
+      "absPath": "/components/install/en--us"
+    },
+    "src-docs/components/install.zh-CN": {
+      "path": "components/install",
+      "id": "src-docs/components/install.zh-CN",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/components/install.zh-CN.md",
+      "absPath": "/components/install"
+    },
+    "src-docs/examples/index.en-US": {
+      "path": "examples/index/en--us",
+      "id": "src-docs/examples/index.en-US",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/examples/index.en-US.md",
+      "absPath": "/examples/index/en--us"
+    },
+    "src-docs/examples/index.zh-CN": {
+      "path": "examples",
+      "id": "src-docs/examples/index.zh-CN",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/examples/index.zh-CN.md",
+      "absPath": "/examples"
+    },
+    "src-docs/utils/index.en-US": {
+      "path": "utils/index/en--us",
+      "id": "src-docs/utils/index.en-US",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/utils/index.en-US.md",
+      "absPath": "/utils/index/en--us"
+    },
+    "src-docs/utils/index.zh-CN": {
+      "path": "utils",
+      "id": "src-docs/utils/index.zh-CN",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/src-docs/utils/index.zh-CN.md",
+      "absPath": "/utils"
+    },
+    "components/Accordion/index.en-US": {
+      "id": "components/Accordion/index.en-US",
+      "path": "components/accordion/index/en--us",
+      "absPath": "/components/accordion/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Accordion/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Accordion/index.zh-CN": {
+      "id": "components/Accordion/index.zh-CN",
+      "path": "components/accordion",
+      "absPath": "/components/accordion",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Accordion/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/ActionSheet/index.en-US": {
+      "id": "components/ActionSheet/index.en-US",
+      "path": "components/action-sheet/index/en--us",
+      "absPath": "/components/action-sheet/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/ActionSheet/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/ActionSheet/index.zh-CN": {
+      "id": "components/ActionSheet/index.zh-CN",
+      "path": "components/action-sheet",
+      "absPath": "/components/action-sheet",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/ActionSheet/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Amount/index.zh-CN": {
+      "id": "components/Amount/index.zh-CN",
+      "path": "components/amount",
+      "absPath": "/components/amount",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Amount/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/App/index.zh-CN": {
+      "id": "components/App/index.zh-CN",
+      "path": "components/app",
+      "absPath": "/components/app",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/App/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Attach/index.en-US": {
+      "id": "components/Attach/index.en-US",
+      "path": "components/attach/index/en--us",
+      "absPath": "/components/attach/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Attach/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Attach/index.zh-CN": {
+      "id": "components/Attach/index.zh-CN",
+      "path": "components/attach",
+      "absPath": "/components/attach",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Attach/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/AttachUploader/index.zh-CN": {
+      "id": "components/AttachUploader/index.zh-CN",
+      "path": "components/attach-uploader",
+      "absPath": "/components/attach-uploader",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/AttachUploader/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Badge/index.en-US": {
+      "id": "components/Badge/index.en-US",
+      "path": "components/badge/index/en--us",
+      "absPath": "/components/badge/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Badge/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Badge/index.zh-CN": {
+      "id": "components/Badge/index.zh-CN",
+      "path": "components/badge",
+      "absPath": "/components/badge",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Badge/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Breadcrumb/index.en-US": {
+      "id": "components/Breadcrumb/index.en-US",
+      "path": "components/breadcrumb/index/en--us",
+      "absPath": "/components/breadcrumb/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Breadcrumb/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Breadcrumb/index.zh-CN": {
+      "id": "components/Breadcrumb/index.zh-CN",
+      "path": "components/breadcrumb",
+      "absPath": "/components/breadcrumb",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Breadcrumb/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Button/index.en-US": {
+      "id": "components/Button/index.en-US",
+      "path": "components/button/index/en--us",
+      "absPath": "/components/button/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Button/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Button/index.zh-CN": {
+      "id": "components/Button/index.zh-CN",
+      "path": "components/button",
+      "absPath": "/components/button",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Button/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Calendar/index.en-US": {
+      "id": "components/Calendar/index.en-US",
+      "path": "components/calendar/index/en--us",
+      "absPath": "/components/calendar/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Calendar/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Calendar/index.zh-CN": {
+      "id": "components/Calendar/index.zh-CN",
+      "path": "components/calendar",
+      "absPath": "/components/calendar",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Calendar/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Card/index.en-US": {
+      "id": "components/Card/index.en-US",
+      "path": "components/card/index/en--us",
+      "absPath": "/components/card/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Card/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Card/index.zh-CN": {
+      "id": "components/Card/index.zh-CN",
+      "path": "components/card",
+      "absPath": "/components/card",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Card/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Cascader/index.en-US": {
+      "id": "components/Cascader/index.en-US",
+      "path": "components/cascader/index/en--us",
+      "absPath": "/components/cascader/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Cascader/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Cascader/index.zh-CN": {
+      "id": "components/Cascader/index.zh-CN",
+      "path": "components/cascader",
+      "absPath": "/components/cascader",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Cascader/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Chat/index.en-US": {
+      "id": "components/Chat/index.en-US",
+      "path": "components/chat/index/en--us",
+      "absPath": "/components/chat/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Chat/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Chat/index.zh-CN": {
+      "id": "components/Chat/index.zh-CN",
+      "path": "components/chat",
+      "absPath": "/components/chat",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Chat/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Checkbox/index.en-US": {
+      "id": "components/Checkbox/index.en-US",
+      "path": "components/checkbox/index/en--us",
+      "absPath": "/components/checkbox/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Checkbox/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Checkbox/index.zh-CN": {
+      "id": "components/Checkbox/index.zh-CN",
+      "path": "components/checkbox",
+      "absPath": "/components/checkbox",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Checkbox/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Combo/index.en-US": {
+      "id": "components/Combo/index.en-US",
+      "path": "components/combo/index/en--us",
+      "absPath": "/components/combo/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Combo/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Combo/index.zh-CN": {
+      "id": "components/Combo/index.zh-CN",
+      "path": "components/combo",
+      "absPath": "/components/combo",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Combo/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/DatePicker/index.en-US": {
+      "id": "components/DatePicker/index.en-US",
+      "path": "components/date-picker/index/en--us",
+      "absPath": "/components/date-picker/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/DatePicker/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/DatePicker/index.zh-CN": {
+      "id": "components/DatePicker/index.zh-CN",
+      "path": "components/date-picker",
+      "absPath": "/components/date-picker",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/DatePicker/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Divider/index.en-US": {
+      "id": "components/Divider/index.en-US",
+      "path": "components/divider/index/en--us",
+      "absPath": "/components/divider/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Divider/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Divider/index.zh-CN": {
+      "id": "components/Divider/index.zh-CN",
+      "path": "components/divider",
+      "absPath": "/components/divider",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Divider/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Flex/index.en-US": {
+      "id": "components/Flex/index.en-US",
+      "path": "components/flex/index/en--us",
+      "absPath": "/components/flex/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Flex/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Flex/index.zh-CN": {
+      "id": "components/Flex/index.zh-CN",
+      "path": "components/flex",
+      "absPath": "/components/flex",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Flex/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Float/index.en-US": {
+      "id": "components/Float/index.en-US",
+      "path": "components/float/index/en--us",
+      "absPath": "/components/float/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Float/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Float/index.zh-CN": {
+      "id": "components/Float/index.zh-CN",
+      "path": "components/float",
+      "absPath": "/components/float",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Float/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/FooterBar/index.en-US": {
+      "id": "components/FooterBar/index.en-US",
+      "path": "components/footer-bar/index/en--us",
+      "absPath": "/components/footer-bar/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/FooterBar/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/FooterBar/index.zh-CN": {
+      "id": "components/FooterBar/index.zh-CN",
+      "path": "components/footer-bar",
+      "absPath": "/components/footer-bar",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/FooterBar/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Form/index.en-US": {
+      "id": "components/Form/index.en-US",
+      "path": "components/form/index/en--us",
+      "absPath": "/components/form/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Form/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Form/index.zh-CN": {
+      "id": "components/Form/index.zh-CN",
+      "path": "components/form",
+      "absPath": "/components/form",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Form/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Icon/index.en-US": {
+      "id": "components/Icon/index.en-US",
+      "path": "components/icon/index/en--us",
+      "absPath": "/components/icon/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Icon/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Icon/index.zh-CN": {
+      "id": "components/Icon/index.zh-CN",
+      "path": "components/icon",
+      "absPath": "/components/icon",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Icon/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/IndexBar/index.en-US": {
+      "id": "components/IndexBar/index.en-US",
+      "path": "components/index-bar/index/en--us",
+      "absPath": "/components/index-bar/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/IndexBar/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/IndexBar/index.zh-CN": {
+      "id": "components/IndexBar/index.zh-CN",
+      "path": "components/index-bar",
+      "absPath": "/components/index-bar",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/IndexBar/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Input/index.en-US": {
+      "id": "components/Input/index.en-US",
+      "path": "components/input/index/en--us",
+      "absPath": "/components/input/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Input/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Input/index.zh-CN": {
+      "id": "components/Input/index.zh-CN",
+      "path": "components/input",
+      "absPath": "/components/input",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Input/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Keyboard/index.en-US": {
+      "id": "components/Keyboard/index.en-US",
+      "path": "components/keyboard/index/en--us",
+      "absPath": "/components/keyboard/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Keyboard/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Keyboard/index.zh-CN": {
+      "id": "components/Keyboard/index.zh-CN",
+      "path": "components/keyboard",
+      "absPath": "/components/keyboard",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Keyboard/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/List/index.en-US": {
+      "id": "components/List/index.en-US",
+      "path": "components/list/index/en--us",
+      "absPath": "/components/list/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/List/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/List/index.zh-CN": {
+      "id": "components/List/index.zh-CN",
+      "path": "components/list",
+      "absPath": "/components/list",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/List/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/ListAsync/index.en-US": {
+      "id": "components/ListAsync/index.en-US",
+      "path": "components/list-async/index/en--us",
+      "absPath": "/components/list-async/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/ListAsync/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/ListAsync/index.zh-CN": {
+      "id": "components/ListAsync/index.zh-CN",
+      "path": "components/list-async",
+      "absPath": "/components/list-async",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/ListAsync/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/ListPagination/index.en-US": {
+      "id": "components/ListPagination/index.en-US",
+      "path": "components/list-pagination/index/en--us",
+      "absPath": "/components/list-pagination/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/ListPagination/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/ListPagination/index.zh-CN": {
+      "id": "components/ListPagination/index.zh-CN",
+      "path": "components/list-pagination",
+      "absPath": "/components/list-pagination",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/ListPagination/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Loading/index.en-US": {
+      "id": "components/Loading/index.en-US",
+      "path": "components/loading/index/en--us",
+      "absPath": "/components/loading/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Loading/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Loading/index.zh-CN": {
+      "id": "components/Loading/index.zh-CN",
+      "path": "components/loading",
+      "absPath": "/components/loading",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Loading/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Location/index.en-US": {
+      "id": "components/Location/index.en-US",
+      "path": "components/location/index/en--us",
+      "absPath": "/components/location/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Location/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Location/index.zh-CN": {
+      "id": "components/Location/index.zh-CN",
+      "path": "components/location",
+      "absPath": "/components/location",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Location/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Map/index.en-US": {
+      "id": "components/Map/index.en-US",
+      "path": "components/map/index/en--us",
+      "absPath": "/components/map/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Map/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Map/index.zh-CN": {
+      "id": "components/Map/index.zh-CN",
+      "path": "components/map",
+      "absPath": "/components/map",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Map/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Media/index.en-US": {
+      "id": "components/Media/index.en-US",
+      "path": "components/media/index/en--us",
+      "absPath": "/components/media/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Media/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Media/index.zh-CN": {
+      "id": "components/Media/index.zh-CN",
+      "path": "components/media",
+      "absPath": "/components/media",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Media/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/MediaUploader/index.zh-CN": {
+      "id": "components/MediaUploader/index.zh-CN",
+      "path": "components/media-uploader",
+      "absPath": "/components/media-uploader",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/MediaUploader/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Message/index.en-US": {
+      "id": "components/Message/index.en-US",
+      "path": "components/message/index/en--us",
+      "absPath": "/components/message/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Message/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Message/index.zh-CN": {
+      "id": "components/Message/index.zh-CN",
+      "path": "components/message",
+      "absPath": "/components/message",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Message/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Modal/index.en-US": {
+      "id": "components/Modal/index.en-US",
+      "path": "components/modal/index/en--us",
+      "absPath": "/components/modal/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Modal/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Modal/index.zh-CN": {
+      "id": "components/Modal/index.zh-CN",
+      "path": "components/modal",
+      "absPath": "/components/modal",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Modal/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/NavBar/index.en-US": {
+      "id": "components/NavBar/index.en-US",
+      "path": "components/nav-bar/index/en--us",
+      "absPath": "/components/nav-bar/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/NavBar/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/NavBar/index.zh-CN": {
+      "id": "components/NavBar/index.zh-CN",
+      "path": "components/nav-bar",
+      "absPath": "/components/nav-bar",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/NavBar/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/NoticeBar/index.en-US": {
+      "id": "components/NoticeBar/index.en-US",
+      "path": "components/notice-bar/index/en--us",
+      "absPath": "/components/notice-bar/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/NoticeBar/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/NoticeBar/index.zh-CN": {
+      "id": "components/NoticeBar/index.zh-CN",
+      "path": "components/notice-bar",
+      "absPath": "/components/notice-bar",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/NoticeBar/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Page/index.en-US": {
+      "id": "components/Page/index.en-US",
+      "path": "components/page/index/en--us",
+      "absPath": "/components/page/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Page/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Page/index.zh-CN": {
+      "id": "components/Page/index.zh-CN",
+      "path": "components/page",
+      "absPath": "/components/page",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Page/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Picker/index.en-US": {
+      "id": "components/Picker/index.en-US",
+      "path": "components/picker/index/en--us",
+      "absPath": "/components/picker/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Picker/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Picker/index.zh-CN": {
+      "id": "components/Picker/index.zh-CN",
+      "path": "components/picker",
+      "absPath": "/components/picker",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Picker/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Progress/index.en-US": {
+      "id": "components/Progress/index.en-US",
+      "path": "components/progress/index/en--us",
+      "absPath": "/components/progress/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Progress/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Progress/index.zh-CN": {
+      "id": "components/Progress/index.zh-CN",
+      "path": "components/progress",
+      "absPath": "/components/progress",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Progress/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/QRCode/index.en-US": {
+      "id": "components/QRCode/index.en-US",
+      "path": "components/qr-code/index/en--us",
+      "absPath": "/components/qr-code/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/QRCode/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/QRCode/index.zh-CN": {
+      "id": "components/QRCode/index.zh-CN",
+      "path": "components/qr-code",
+      "absPath": "/components/qr-code",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/QRCode/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Result/index.en-US": {
+      "id": "components/Result/index.en-US",
+      "path": "components/result/index/en--us",
+      "absPath": "/components/result/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Result/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Result/index.zh-CN": {
+      "id": "components/Result/index.zh-CN",
+      "path": "components/result",
+      "absPath": "/components/result",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Result/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Row/index.en-US": {
+      "id": "components/Row/index.en-US",
+      "path": "components/row/index/en--us",
+      "absPath": "/components/row/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Row/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Row/index.zh-CN": {
+      "id": "components/Row/index.zh-CN",
+      "path": "components/row",
+      "absPath": "/components/row",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Row/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/SafeArea/index.en-US": {
+      "id": "components/SafeArea/index.en-US",
+      "path": "components/safe-area/index/en--us",
+      "absPath": "/components/safe-area/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/SafeArea/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/SafeArea/index.zh-CN": {
+      "id": "components/SafeArea/index.zh-CN",
+      "path": "components/safe-area",
+      "absPath": "/components/safe-area",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/SafeArea/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Select/index.en-US": {
+      "id": "components/Select/index.en-US",
+      "path": "components/select/index/en--us",
+      "absPath": "/components/select/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Select/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Select/index.zh-CN": {
+      "id": "components/Select/index.zh-CN",
+      "path": "components/select",
+      "absPath": "/components/select",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Select/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Selector/index.en-US": {
+      "id": "components/Selector/index.en-US",
+      "path": "components/selector/index/en--us",
+      "absPath": "/components/selector/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Selector/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Selector/index.zh-CN": {
+      "id": "components/Selector/index.zh-CN",
+      "path": "components/selector",
+      "absPath": "/components/selector",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Selector/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Signature/index.en-US": {
+      "id": "components/Signature/index.en-US",
+      "path": "components/signature/index/en--us",
+      "absPath": "/components/signature/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Signature/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Signature/index.zh-CN": {
+      "id": "components/Signature/index.zh-CN",
+      "path": "components/signature",
+      "absPath": "/components/signature",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Signature/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Skeleton/index.en-US": {
+      "id": "components/Skeleton/index.en-US",
+      "path": "components/skeleton/index/en--us",
+      "absPath": "/components/skeleton/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Skeleton/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Skeleton/index.zh-CN": {
+      "id": "components/Skeleton/index.zh-CN",
+      "path": "components/skeleton",
+      "absPath": "/components/skeleton",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Skeleton/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Stamp/index.en-US": {
+      "id": "components/Stamp/index.en-US",
+      "path": "components/stamp/index/en--us",
+      "absPath": "/components/stamp/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Stamp/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Stamp/index.zh-CN": {
+      "id": "components/Stamp/index.zh-CN",
+      "path": "components/stamp",
+      "absPath": "/components/stamp",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Stamp/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Steps/index.en-US": {
+      "id": "components/Steps/index.en-US",
+      "path": "components/steps/index/en--us",
+      "absPath": "/components/steps/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Steps/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Steps/index.zh-CN": {
+      "id": "components/Steps/index.zh-CN",
+      "path": "components/steps",
+      "absPath": "/components/steps",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Steps/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Switch/index.en-US": {
+      "id": "components/Switch/index.en-US",
+      "path": "components/switch/index/en--us",
+      "absPath": "/components/switch/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Switch/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Switch/index.zh-CN": {
+      "id": "components/Switch/index.zh-CN",
+      "path": "components/switch",
+      "absPath": "/components/switch",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Switch/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/TabBar/index.en-US": {
+      "id": "components/TabBar/index.en-US",
+      "path": "components/tab-bar/index/en--us",
+      "absPath": "/components/tab-bar/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/TabBar/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/TabBar/index.zh-CN": {
+      "id": "components/TabBar/index.zh-CN",
+      "path": "components/tab-bar",
+      "absPath": "/components/tab-bar",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/TabBar/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Text/index.en-US": {
+      "id": "components/Text/index.en-US",
+      "path": "components/text/index/en--us",
+      "absPath": "/components/text/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Text/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Text/index.zh-CN": {
+      "id": "components/Text/index.zh-CN",
+      "path": "components/text",
+      "absPath": "/components/text",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Text/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Toast/index.en-US": {
+      "id": "components/Toast/index.en-US",
+      "path": "components/toast/index/en--us",
+      "absPath": "/components/toast/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Toast/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Toast/index.zh-CN": {
+      "id": "components/Toast/index.zh-CN",
+      "path": "components/toast",
+      "absPath": "/components/toast",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Toast/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/ToolBar/index.en-US": {
+      "id": "components/ToolBar/index.en-US",
+      "path": "components/tool-bar/index/en--us",
+      "absPath": "/components/tool-bar/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/ToolBar/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/ToolBar/index.zh-CN": {
+      "id": "components/ToolBar/index.zh-CN",
+      "path": "components/tool-bar",
+      "absPath": "/components/tool-bar",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/ToolBar/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Tooltip/index.en-US": {
+      "id": "components/Tooltip/index.en-US",
+      "path": "components/tooltip/index/en--us",
+      "absPath": "/components/tooltip/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Tooltip/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Tooltip/index.zh-CN": {
+      "id": "components/Tooltip/index.zh-CN",
+      "path": "components/tooltip",
+      "absPath": "/components/tooltip",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Tooltip/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Transfer/index.en-US": {
+      "id": "components/Transfer/index.en-US",
+      "path": "components/transfer/index/en--us",
+      "absPath": "/components/transfer/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Transfer/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Transfer/index.zh-CN": {
+      "id": "components/Transfer/index.zh-CN",
+      "path": "components/transfer",
+      "absPath": "/components/transfer",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Transfer/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Tree/index.en-US": {
+      "id": "components/Tree/index.en-US",
+      "path": "components/tree/index/en--us",
+      "absPath": "/components/tree/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Tree/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/Tree/index.zh-CN": {
+      "id": "components/Tree/index.zh-CN",
+      "path": "components/tree",
+      "absPath": "/components/tree",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/Tree/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/VideoPlayer/index.en-US": {
+      "id": "components/VideoPlayer/index.en-US",
+      "path": "components/video-player/index/en--us",
+      "absPath": "/components/video-player/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/VideoPlayer/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/VideoPlayer/index.zh-CN": {
+      "id": "components/VideoPlayer/index.zh-CN",
+      "path": "components/video-player",
+      "absPath": "/components/video-player",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/VideoPlayer/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "components/WebView/index.zh-CN": {
+      "id": "components/WebView/index.zh-CN",
+      "path": "components/web-view",
+      "absPath": "/components/web-view",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/components/WebView/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/Detail/index.en-US": {
+      "id": "examples/Detail/index.en-US",
+      "path": "examples/detail/index/en--us",
+      "absPath": "/examples/detail/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/Detail/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/Detail/index.zh-CN": {
+      "id": "examples/Detail/index.zh-CN",
+      "path": "examples/detail",
+      "absPath": "/examples/detail",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/Detail/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/Edit/index.en-US": {
+      "id": "examples/Edit/index.en-US",
+      "path": "examples/edit/index/en--us",
+      "absPath": "/examples/edit/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/Edit/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/Edit/index.zh-CN": {
+      "id": "examples/Edit/index.zh-CN",
+      "path": "examples/edit",
+      "absPath": "/examples/edit",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/Edit/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/List/index.en-US": {
+      "id": "examples/List/index.en-US",
+      "path": "examples/list/index/en--us",
+      "absPath": "/examples/list/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/List/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/List/index.zh-CN": {
+      "id": "examples/List/index.zh-CN",
+      "path": "examples/list",
+      "absPath": "/examples/list",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/List/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/Login/index.en-US": {
+      "id": "examples/Login/index.en-US",
+      "path": "examples/login/index/en--us",
+      "absPath": "/examples/login/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/Login/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/Login/index.zh-CN": {
+      "id": "examples/Login/index.zh-CN",
+      "path": "examples/login",
+      "absPath": "/examples/login",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/Login/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/Report/index.en-US": {
+      "id": "examples/Report/index.en-US",
+      "path": "examples/report/index/en--us",
+      "absPath": "/examples/report/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/Report/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "examples/Report/index.zh-CN": {
+      "id": "examples/Report/index.zh-CN",
+      "path": "examples/report",
+      "absPath": "/examples/report",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/node_modules/lyrixi-mobile/src/examples/Report/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/ArrayUtil/index.en-US": {
+      "id": "utils/ArrayUtil/index.en-US",
+      "path": "utils/array-util/index/en--us",
+      "absPath": "/utils/array-util/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/ArrayUtil/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/ArrayUtil/index.zh-CN": {
+      "id": "utils/ArrayUtil/index.zh-CN",
+      "path": "utils/array-util",
+      "absPath": "/utils/array-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/ArrayUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/AssetUtil/index.en-US": {
+      "id": "utils/AssetUtil/index.en-US",
+      "path": "utils/asset-util/index/en--us",
+      "absPath": "/utils/asset-util/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/AssetUtil/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/AssetUtil/index.zh-CN": {
+      "id": "utils/AssetUtil/index.zh-CN",
+      "path": "utils/asset-util",
+      "absPath": "/utils/asset-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/AssetUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Bridge/index.en-US": {
+      "id": "utils/Bridge/index.en-US",
+      "path": "utils/bridge/index/en--us",
+      "absPath": "/utils/bridge/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Bridge/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Bridge/index.zh-CN": {
+      "id": "utils/Bridge/index.zh-CN",
+      "path": "utils/bridge",
+      "absPath": "/utils/bridge",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Bridge/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Clipboard/index.en-US": {
+      "id": "utils/Clipboard/index.en-US",
+      "path": "utils/clipboard/index/en--us",
+      "absPath": "/utils/clipboard/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Clipboard/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Clipboard/index.zh-CN": {
+      "id": "utils/Clipboard/index.zh-CN",
+      "path": "utils/clipboard",
+      "absPath": "/utils/clipboard",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Clipboard/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/DataUtil/index.zh-CN": {
+      "id": "utils/DataUtil/index.zh-CN",
+      "path": "utils/data-util",
+      "absPath": "/utils/data-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/DataUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/DateUtil/index.en-US": {
+      "id": "utils/DateUtil/index.en-US",
+      "path": "utils/date-util/index/en--us",
+      "absPath": "/utils/date-util/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/DateUtil/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/DateUtil/index.zh-CN": {
+      "id": "utils/DateUtil/index.zh-CN",
+      "path": "utils/date-util",
+      "absPath": "/utils/date-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/DateUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Debugger/index.en-US": {
+      "id": "utils/Debugger/index.en-US",
+      "path": "utils/debugger/index/en--us",
+      "absPath": "/utils/debugger/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Debugger/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Debugger/index.zh-CN": {
+      "id": "utils/Debugger/index.zh-CN",
+      "path": "utils/debugger",
+      "absPath": "/utils/debugger",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Debugger/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Device/index.en-US": {
+      "id": "utils/Device/index.en-US",
+      "path": "utils/device/index/en--us",
+      "absPath": "/utils/device/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Device/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Device/index.zh-CN": {
+      "id": "utils/Device/index.zh-CN",
+      "path": "utils/device",
+      "absPath": "/utils/device",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Device/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/DOMUtil/index.en-US": {
+      "id": "utils/DOMUtil/index.en-US",
+      "path": "utils/dom-util/index/en--us",
+      "absPath": "/utils/dom-util/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/DOMUtil/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/DOMUtil/index.zh-CN": {
+      "id": "utils/DOMUtil/index.zh-CN",
+      "path": "utils/dom-util",
+      "absPath": "/utils/dom-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/DOMUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/EventBus/index.en-US": {
+      "id": "utils/EventBus/index.en-US",
+      "path": "utils/event-bus/index/en--us",
+      "absPath": "/utils/event-bus/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/EventBus/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/EventBus/index.zh-CN": {
+      "id": "utils/EventBus/index.zh-CN",
+      "path": "utils/event-bus",
+      "absPath": "/utils/event-bus",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/EventBus/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/FullScreen/index.en-US": {
+      "id": "utils/FullScreen/index.en-US",
+      "path": "utils/full-screen/index/en--us",
+      "absPath": "/utils/full-screen/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/FullScreen/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/FullScreen/index.zh-CN": {
+      "id": "utils/FullScreen/index.zh-CN",
+      "path": "utils/full-screen",
+      "absPath": "/utils/full-screen",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/FullScreen/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/FunctionUtil/index.zh-CN": {
+      "id": "utils/FunctionUtil/index.zh-CN",
+      "path": "utils/function-util",
+      "absPath": "/utils/function-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/FunctionUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/GeoUtil/index.en-US": {
+      "id": "utils/GeoUtil/index.en-US",
+      "path": "utils/geo-util/index/en--us",
+      "absPath": "/utils/geo-util/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/GeoUtil/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/GeoUtil/index.zh-CN": {
+      "id": "utils/GeoUtil/index.zh-CN",
+      "path": "utils/geo-util",
+      "absPath": "/utils/geo-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/GeoUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/IdUtil/index.zh-CN": {
+      "id": "utils/IdUtil/index.zh-CN",
+      "path": "utils/id-util",
+      "absPath": "/utils/id-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/IdUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/LocaleUtil/index.en-US": {
+      "id": "utils/LocaleUtil/index.en-US",
+      "path": "utils/locale-util/index/en--us",
+      "absPath": "/utils/locale-util/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/LocaleUtil/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/LocaleUtil/index.zh-CN": {
+      "id": "utils/LocaleUtil/index.zh-CN",
+      "path": "utils/locale-util",
+      "absPath": "/utils/locale-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/LocaleUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Logger/index.en-US": {
+      "id": "utils/Logger/index.en-US",
+      "path": "utils/logger/index/en--us",
+      "absPath": "/utils/logger/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Logger/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Logger/index.zh-CN": {
+      "id": "utils/Logger/index.zh-CN",
+      "path": "utils/logger",
+      "absPath": "/utils/logger",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Logger/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/MathUtil/index.en-US": {
+      "id": "utils/MathUtil/index.en-US",
+      "path": "utils/math-util/index/en--us",
+      "absPath": "/utils/math-util/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/MathUtil/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/MathUtil/index.zh-CN": {
+      "id": "utils/MathUtil/index.zh-CN",
+      "path": "utils/math-util",
+      "absPath": "/utils/math-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/MathUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Request/index.en-US": {
+      "id": "utils/Request/index.en-US",
+      "path": "utils/request/index/en--us",
+      "absPath": "/utils/request/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Request/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Request/index.zh-CN": {
+      "id": "utils/Request/index.zh-CN",
+      "path": "utils/request",
+      "absPath": "/utils/request",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Request/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Router/index.zh-CN": {
+      "id": "utils/Router/index.zh-CN",
+      "path": "utils/router",
+      "absPath": "/utils/router",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Router/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Storage/index.en-US": {
+      "id": "utils/Storage/index.en-US",
+      "path": "utils/storage/index/en--us",
+      "absPath": "/utils/storage/index/en--us",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Storage/index.en-US.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Storage/index.zh-CN": {
+      "id": "utils/Storage/index.zh-CN",
+      "path": "utils/storage",
+      "absPath": "/utils/storage",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Storage/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/Theme/index.zh-CN": {
+      "id": "utils/Theme/index.zh-CN",
+      "path": "utils/theme",
+      "absPath": "/utils/theme",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/Theme/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
+    },
+    "utils/ValidatorUtil/index.zh-CN": {
+      "id": "utils/ValidatorUtil/index.zh-CN",
+      "path": "utils/validator-util",
+      "absPath": "/utils/validator-util",
+      "parentId": "DocLayout",
+      "file": "/Users/jamie/Documents/development/lyrixi/lyrixi/mobile-src/utils/ValidatorUtil/index.zh-CN.md",
+      "meta": {
+        "_atom_route": true
+      }
     },
     "demo-render": {
       "id": "demo-render",

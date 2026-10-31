@@ -1,0 +1,119 @@
+.lyrixi-tabbar-group {
+  max-width: 100%;
+  position: relative;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  color: var(--lyrixi-color-secondary);
+}
+
+.lyrixi-tabbar-group-tab-description {
+  color: var(--lyrixi-color-secondary);
+  font-size: var(--lyrixi-font-size-s);
+}
+
+.lyrixi-tabbar-group-tab {
+  border: 1px solid var(--lyrixi-border-color);
+  border-left-width: 0;
+  position: relative;
+  flex: auto;
+  white-space: nowrap;
+  padding: var(--lyrixi-space-s) var(--lyrixi-space-xl);
+  text-align: center;
+
+  // 禁用
+  &.lyrixi-disabled,
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.lyrixi-tabbar-group-tab.lyrixi-active {
+  color: var(--lyrixi-color-primary);
+  background-color: #fff;
+  border-color: var(--lyrixi-color-primary);
+}
+
+// 每块只有上右下有边框, 选中时需要补充左边框
+.lyrixi-tabbar-group-tab.lyrixi-active:not(:first-child)::before {
+  position: absolute;
+  content: '';
+  left: -1px;
+  top: -1px;
+  bottom: -1px;
+  width: 1px;
+  background-color: var(--lyrixi-color-primary);
+}
+
+// 圆角
+.lyrixi-tabbar-group-tab:first-child {
+  border-start-start-radius: var(--lyrixi-radius-m);
+  border-end-start-radius: var(--lyrixi-radius-m);
+  border-left-width: 1px;
+}
+
+.lyrixi-tabbar-group-tab:last-child {
+  border-start-end-radius: var(--lyrixi-radius-m);
+  border-end-end-radius: var(--lyrixi-radius-m);
+}
+
+.lyrixi-tabbar-group-tab-name + .lyrixi-tabbar-group-tab-description,
+.lyrixi-tabbar-group-tab-description + .lyrixi-tabbar-group-tab-name {
+  margin-top: var(--lyrixi-space-s);
+}
+
+// 块级：占满一行
+.lyrixi-tabbar-group.lyrixi-block {
+  display: flex;
+}
+
+// 尺寸
+.lyrixi-tabbar-group.lyrixi-size-s {
+  // 圆角
+  .lyrixi-tabbar-group-tab:first-child {
+    border-start-start-radius: var(--lyrixi-radius-xs);
+    border-end-start-radius: var(--lyrixi-radius-xs);
+  }
+
+  .lyrixi-tabbar-group-tab:last-child {
+    border-start-end-radius: var(--lyrixi-radius-xs);
+    border-end-end-radius: var(--lyrixi-radius-xs);
+  }
+
+  .lyrixi-tabbar-group-tab {
+    padding: var(--lyrixi-space-xxs) var(--lyrixi-space-s);
+  }
+
+  .lyrixi-tabbar-group-tab-name {
+    font-size: var(--lyrixi-font-size-s);
+  }
+}
+
+.lyrixi-tabbar-group.lyrixi-size-m {
+  .lyrixi-tabbar-group-tab-name {
+    font-size: var(--lyrixi-font-size-m);
+  }
+}
+
+.lyrixi-tabbar-group.lyrixi-size-l {
+  // 圆角
+  .lyrixi-tabbar-group-tab:first-child {
+    border-start-start-radius: var(--lyrixi-radius-l);
+    border-end-start-radius: var(--lyrixi-radius-l);
+  }
+
+  .lyrixi-tabbar-group-tab:last-child {
+    border-start-end-radius: var(--lyrixi-radius-l);
+    border-end-end-radius: var(--lyrixi-radius-l);
+  }
+
+  .lyrixi-tabbar-group-tab {
+    padding: var(--lyrixi-space-m) var(--lyrixi-space-xxl);
+  }
+
+  .lyrixi-tabbar-group-tab-name {
+    font-size: var(--lyrixi-font-size-l);
+  }
+}

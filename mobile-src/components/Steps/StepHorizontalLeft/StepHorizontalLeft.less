@@ -1,0 +1,37 @@
+// Icon size
+.lyrixi-steps-item.lyrixi-horizontal.lyrixi-left {
+  .lyrixi-steps-item-icon {
+    // Title中间的位置, 偏移一半的高度
+    margin-top: calc(var(--lyrixi-steps-title-height) / 2 - var(--lyrixi-steps-icon-size) / 2);
+  }
+
+  .lyrixi-steps-item-rail {
+    left: 100% + 8px;
+    // Title中间的位置, 偏移一半的高度
+    top: calc(var(--lyrixi-steps-title-height) / 2);
+  }
+}
+
+.lyrixi-steps-item.lyrixi-horizontal.lyrixi-left {
+  overflow: hidden;
+
+  .lyrixi-steps-item-content {
+    margin-left: 8px;
+  }
+
+  .lyrixi-steps-item-title {
+    position: relative;
+    display: inline-block;
+  }
+
+  .lyrixi-steps-item-rail {
+    height: 1px;
+    width: 1000px;
+    position: absolute;
+    background-color: var(--lyrixi-border-color);
+  }
+}
+
+.lyrixi-steps .lyrixi-steps-item.lyrixi-horizontal.lyrixi-left:not(:last-child) {
+  flex: 1;
+}

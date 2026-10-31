@@ -1,0 +1,19 @@
+@import 'NavBar/NavBar.less';
+
+// picker遮罩, 基于.mask
+.lyrixi-mask-navbar {
+}
+
+.lyrixi-modal-navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // 高度太小会影响日期区间控件, 在小屏手机上完整的显示
+  max-height: 95%;
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
+  background-color: white;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}

@@ -1,0 +1,30 @@
+@import 'Item/MediaItem.less';
+@import 'PreviewModal/MediaPreviewModal.less';
+@import 'PreviewMain/MediaPreviewMain.less';
+@import 'Choose/MediaChoose.less';
+@import 'Uploading/MediaUploading.less';
+@import 'Mark/MediaMark.less';
+
+// 照片视频列表
+.lyrixi-media {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  row-gap: 8px;
+
+  // 上传中
+  &.lyrixi-uploading {
+    // 显示转圈
+    .lyrixi-media-choose {
+      .lyrixi-media-uploading {
+        display: block;
+      }
+    }
+
+    // 上传中不允许删除,重传
+    .lyrixi-media-delete,
+    .lyrixi-media-reload {
+      display: none;
+    }
+  }
+}

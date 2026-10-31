@@ -1,0 +1,91 @@
+// NoticeBar通告栏
+.lyrixi-noticebar {
+  display: flex;
+  padding: var(--lyrixi-space-s) var(--lyrixi-space-m);
+}
+
+// 左侧图标
+.lyrixi-noticebar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 1.5px;
+}
+
+// Success类型
+.lyrixi-noticebar-success {
+  background-color: var(--lyrixi-color-success-lighten);
+  color: var(--lyrixi-color-success);
+
+  .lyrixi-noticebar-icon {
+    color: var(--lyrixi-color-success);
+  }
+}
+
+// Info类型
+.lyrixi-noticebar-info {
+  background-color: var(--lyrixi-color-info-lighten);
+  color: var(--lyrixi-color-info);
+
+  .lyrixi-noticebar-icon {
+    color: var(--lyrixi-color-info);
+  }
+}
+
+// Warning类型
+.lyrixi-noticebar-warning {
+  background-color: var(--lyrixi-color-warning-lighten);
+  color: var(--lyrixi-color-warning);
+
+  .lyrixi-noticebar-icon {
+    color: var(--lyrixi-color-warning);
+  }
+}
+
+// Error类型
+.lyrixi-noticebar-error {
+  background-color: var(--lyrixi-color-danger-lighten);
+  color: var(--lyrixi-color-danger);
+
+  .lyrixi-noticebar-icon {
+    color: var(--lyrixi-color-danger);
+  }
+}
+
+// 内容
+.lyrixi-noticebar-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.lyrixi-noticebar-icon + .lyrixi-noticebar-content {
+  margin-left: var(--lyrixi-space-xxs);
+}
+
+// 标题
+.lyrixi-noticebar-title {
+  font-size: var(--lyrixi-font-size-s);
+}
+
+// 描述
+.lyrixi-noticebar-description {
+  font-size: var(--lyrixi-font-size-s);
+  opacity: 0.8;
+}
+
+// 关闭按钮
+.lyrixi-noticebar-close-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  width: 12px;
+  line-height: 12px;
+  margin-left: var(--lyrixi-space-xxs);
+  margin-top: 2px;
+  color: black;
+  opacity: 0.2;
+}

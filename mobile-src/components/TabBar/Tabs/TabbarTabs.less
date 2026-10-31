@@ -1,0 +1,125 @@
+.lyrixi-tabbar-tabs {
+  max-width: 100%;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+// 块级：占满一行
+.lyrixi-tabbar-tabs.lyrixi-block {
+  display: flex;
+
+  .lyrixi-tabbar-tabs-tab {
+    flex: auto;
+  }
+}
+
+// Separator
+.lyrixi-tabbar-tabs-separator {
+  display: flex;
+  // 强制拉伸到容器高度
+  align-self: stretch;
+  align-items: center;
+  color: var(--lyrixi-color-tertiary);
+}
+
+// Separator align to name / 文本
+.lyrixi-tabbar-tabs-tab-description {
+  color: var(--lyrixi-color-secondary);
+  font-size: var(--lyrixi-font-size-s);
+}
+
+// 选中效果
+.lyrixi-tabbar-tabs-tab.lyrixi-active {
+  color: var(--lyrixi-color-primary);
+
+  .lyrixi-tabbar-tabs-tab-name {
+    font-weight: 500;
+  }
+
+  // 显示选中条
+  &::after {
+    display: block;
+  }
+}
+
+// 选中条
+.lyrixi-tabbar-tabs-tab-line {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--lyrixi-color-primary);
+  transform-origin: center center;
+  content: '';
+  border-radius: 2px;
+}
+
+// 单项
+.lyrixi-tabbar-tabs-tab {
+  position: relative;
+  flex: none;
+  white-space: nowrap;
+  padding: var(--lyrixi-space-l) var(--lyrixi-space-xl);
+  margin: 0 auto;
+  width: min-content;
+  cursor: pointer;
+  text-align: center;
+
+  &::after {
+    .lyrixi-tabbar-tabs-tab-line();
+  }
+
+  // 禁用
+  &.lyrixi-disabled,
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+// 紧凑显示
+.lyrixi-tabbar-tabs.lyrixi-tabbar-tabs-compact {
+  .lyrixi-tabbar-tabs-tab {
+    flex: initial;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.lyrixi-tabbar-tabs-tab-name + .lyrixi-tabbar-tabs-tab-description,
+.lyrixi-tabbar-tabs-tab-description + .lyrixi-tabbar-tabs-tab-name {
+  margin-top: var(--lyrixi-space-s);
+}
+
+// 尺寸
+.lyrixi-tabbar-tabs.lyrixi-size-s {
+  .lyrixi-tabbar-tabs-tab {
+    padding: var(--lyrixi-space-m) var(--lyrixi-space-s);
+  }
+
+  .lyrixi-tabbar-tabs-tab-name {
+    font-size: var(--lyrixi-font-size-s);
+  }
+}
+
+.lyrixi-tabbar-tabs.lyrixi-size-m {
+  .lyrixi-tabbar-tabs-tab-name {
+    font-size: var(--lyrixi-font-size-m);
+  }
+}
+
+.lyrixi-tabbar-tabs.lyrixi-size-l {
+  .lyrixi-tabbar-tabs-tab {
+    padding: var(--lyrixi-space-xl) var(--lyrixi-space-xxl);
+  }
+
+  .lyrixi-tabbar-tabs-tab-name {
+    font-size: var(--lyrixi-font-size-l);
+  }
+}

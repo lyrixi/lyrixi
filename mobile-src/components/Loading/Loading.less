@@ -1,0 +1,55 @@
+@import './SpinFade/SpinFade.less';
+@import './Ouroboros/Ouroboros.less';
+@import './BallWave/BallWave.less';
+
+// Loading
+// 是否允许点击
+.lyrixi-loading-propagation {
+  pointer-events: none;
+}
+
+// 遮罩, 基于.mask
+.lyrixi-mask-loading {
+  background-color: transparent;
+  transition-duration: 0ms;
+
+  &.lyrixi-active {
+    .lyrixi-flex();
+    .lyrixi-flex-align-center();
+    .lyrixi-flex-justify-center();
+  }
+
+  z-index: 11;
+}
+
+.lyrixi-loading {
+  .lyrixi-flex();
+  .lyrixi-flex-align-center();
+  .lyrixi-flex-justify-center();
+  .lyrixi-flex-vertical();
+
+  min-width: 80px;
+  max-width: 90%;
+  height: 80px;
+  margin-top: -50px;
+  padding: 0 12px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 50%);
+  border-radius: 12px;
+}
+
+.lyrixi-loading-content {
+  font-size: var(--lyrixi-font-size-s);
+}
+
+.lyrixi-loading-icon {
+  // Sometime loading icon on .lyrixi-loading-icon
+  color: white;
+
+  // Sometime loading icon in .lyrixi-loading-icon
+  & > div {
+    color: white;
+  }
+
+  margin: 10px auto;
+}

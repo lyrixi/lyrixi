@@ -1,0 +1,16 @@
+@import 'Tabs/TabbarTabs.less';
+@import 'Group/TabbarGroup.less';
+@import 'Menus/TabbarMenus.less';
+@import 'Slide/TabbarSlide.less';
+
+// TabBar
+.lyrixi-tabbar-tabs,
+.lyrixi-tabbar-group,
+.lyrixi-tabbar-menus {
+  // 禁用
+  &.lyrixi-disabled,
+  &[disabled] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}

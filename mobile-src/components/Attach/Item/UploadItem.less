@@ -1,0 +1,79 @@
+// 内容区域
+.lyrixi-attach-item-main {
+  width: 1px; // 用于解决内容过长时超出屏幕的问题
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 20px;
+  padding: 12px 0;
+  margin-left: 10px;
+}
+
+.lyrixi-attach-item:not(:last-child) {
+  .lyrixi-attach-item-main {
+    .lyrixi-border-b();
+  }
+}
+
+// 项内容
+.lyrixi-attach-item {
+  position: relative;
+
+  .lyrixi-flex();
+  .lyrixi-flex-align-center();
+
+  .lyrixi-attach-uploading-icon-loading {
+    color: #d9d9d9;
+  }
+
+  &.lyrixi-error {
+    color: var(--lyrixi-color-danger);
+
+    .lyrixi-attach-reload {
+      display: flex;
+    }
+  }
+
+  &.lyrixi-uploading {
+    .lyrixi-attach-uploading {
+      display: block;
+    }
+  }
+}
+
+.lyrixi-attach-item-type {
+  .lyrixi-flex();
+  .lyrixi-flex-align-center();
+  .lyrixi-flex-justify-center();
+
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+}
+
+.lyrixi-attach-item-title {
+  pointer-events: none;
+  .lyrixi-flex-1();
+  .lyrixi-nowrap();
+  .lyrixi-ellipsis();
+}
+
+.lyrixi-attach-item-right-icon {
+  margin-left: 12px;
+}
+
+.lyrixi-attach-delete,
+.lyrixi-attach-reload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a9b1b9;
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.lyrixi-attach-reload {
+  display: none;
+  overflow: hidden;
+}

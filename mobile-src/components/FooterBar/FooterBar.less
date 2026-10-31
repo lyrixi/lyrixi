@@ -1,0 +1,22 @@
+.lyrixi-footerbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background-color: white;
+  .lyrixi-border-t();
+  // 统一文字行高, 解决文字垂直对齐的问题
+  line-height: 1;
+}
+
+// Compatiable old models. Don't use gap
+.lyrixi-bad-android,
+.lyrixi-bad-ios {
+  .lyrixi-footerbar {
+    gap: initial;
+
+    & > div:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+}

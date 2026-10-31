@@ -1,0 +1,27 @@
+// 图片
+.lyrixi-media-item-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  // 照片加载中
+  &:extend(.lyrixi-bg-image-default all);
+
+  background-position: center;
+  background-size: cover;
+
+  // 图片加载错误
+  &.lyrixi-error {
+    object-fit: none;
+    &:extend(.lyrixi-bg-image-error all);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  // 图片加载成功
+  &.lyrixi-success {
+  }
+}
