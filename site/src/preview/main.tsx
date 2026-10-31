@@ -1,4 +1,4 @@
-import { StrictMode, useMemo } from 'react'
+import { StrictMode, useEffect, useState } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import { getDemo } from './demoRegistry'
@@ -9,16 +9,21 @@ function readDemoId() {
 }
 
 function PreviewApp() {
-  const id = readDemoId()
+  const [id, setId] = useState(readDemoId)
   const Demo = id ? getDemo(id) : null
   const isMobile = id.startsWith('mobile/') && !id.startsWith('mobile-rn/')
 
+  useEffect(() => {
+    const sync = () => setId(readDemoId())
+    window.addEventListener('hashchange', sync)
+    return () => window.removeEventListener('hashchange', sync)
+  }, [])
+
   // H5 demos need the design-token stylesheet from lyrixi-mobile.
-  useMemo(() => {
+  useEffect(() => {
     if (isMobile) {
       void import('../../../../lyrixi-mobile/src/assets/index.less')
     }
-    return null
   }, [isMobile])
 
   if (!id) {

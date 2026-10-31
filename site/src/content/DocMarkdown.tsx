@@ -1,55 +1,80 @@
+import { useEffect, useMemo } from 'react'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import type { Components } from 'react-markdown'
 
-import { stripFrontmatter } from './stripFrontmatter'
+import { DemoPlayground } from '@/components/DemoPlayground'
+import type { ProductId } from '@/config/products'
+import { buildPreviewDemoId } from '@/content/demoId'
+import { getDemoSourceByPath, resolveDemoFilePath } from '@/content/loadDemoSource'
+import { splitDocByDemos } from '@/content/parseDocParts'
+import { stripFrontmatter } from '@/content/stripFrontmatter'
 
 import styles from './DocMarkdown.module.css'
 
 interface DocMarkdownProps {
   source: string
-  /** Called when a Dumi-style <code src="./demos/X.tsx"> is found. */
-  onDemoSrc?: (src: string) => void
-  /** Active demo src highlighted as a live slot note. */
-  activeDemoSrc?: string | null
+  productId: ProductId
+  resourceSlug: string
+  mdRelative: string
 }
 
-/**
- * Renders component docs. Dumi `<code src="...">` tags become preview hooks
- * instead of being executed in the markdown tree.
- */
-export function DocMarkdown({ source, onDemoSrc, activeDemoSrc }: DocMarkdownProps) {
-  const content = stripFrontmatter(source)
+const markdownComponents: Components = {
+  code({ className, children, ...props }) {
+    if (className) {
+      return (
+        <code className={className} {...props}>
+          {children}
+        </code>
+      )
+    }
+    return <code {...props}>{children}</code>
+  },
+}
 
-  const components: Components = {
-    code({ className, children, ...props }) {
-      if (className) {
-        return (
-          <code className={className} {...props}>
-            {children}
-          </code>
-        )
-      }
-      return <code {...props}>{children}</code>
-    },
-  }
+export function DocMarkdown({ source, productId, resourceSlug, mdRelative }: DocMarkdownProps) {
+  const body = stripFrontmatter(source)
+  const parts = useMemo(() => splitDocByDemos(body), [body])
+  const hasDemo = parts.some((p) => p.type === 'demo')
 
-  // Replace <code src="..."></code> before markdown parse for reliable handling.
-  const rewritten = content.replace(
-    /<code\s+src=["']([^"']+)["']\s*>\s*<\/code>/g,
-    (_match, src: string) => {
-      onDemoSrc?.(src)
-      const isActive = activeDemoSrc === src
-      return `\n\n> 📱 右侧手机框预览：\`${src}\`${isActive ? '（当前）' : ''}\n\n`
-    },
-  )
+  useEffect(() => {
+    if (!hasDemo) return
+    void import('../../../../lyrixi-mobile/src/assets/index.less')
+  }, [hasDemo])
 
   return (
     <div className={styles.doc}>
-      <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} components={components}>
-        {rewritten}
-      </ReactMarkdown>
+      {parts.map((part, index) => {
+        if (part.type === 'markdown') {
+          const trimmed = part.content.trim()
+          if (!trimmed) return null
+          return (
+            <ReactMarkdown
+              key={`md-${index}`}
+              remarkPlugins={[remarkGfm]}
+              rehypePlugins={[rehypeRaw]}
+              components={markdownComponents}
+            >
+              {part.content}
+            </ReactMarkdown>
+          )
+        }
+
+        const filePath = resolveDemoFilePath(mdRelative, part.src)
+        const code = getDemoSourceByPath(filePath)
+        const demoId = buildPreviewDemoId(productId, resourceSlug, part.src)
+        const fileLabel = part.src.replace(/^\.\//, '')
+
+        return (
+          <DemoPlayground
+            key={`demo-${index}-${part.src}`}
+            demoId={demoId}
+            code={code}
+            fileLabel={fileLabel}
+          />
+        )
+      })}
     </div>
   )
 }

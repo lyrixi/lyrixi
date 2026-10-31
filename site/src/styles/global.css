@@ -20,7 +20,7 @@
   flex: 1;
   min-height: 0;
   display: grid;
-  grid-template-columns: var(--lyrixi-sidebar-width) minmax(0, 1fr) auto;
+  grid-template-columns: var(--lyrixi-sidebar-width) minmax(0, 1fr);
   background: var(--lyrixi-bg-doc);
   color: var(--lyrixi-text-on-light);
 }
@@ -29,18 +29,6 @@
   min-width: 0;
   overflow: auto;
   padding: 28px 36px 64px;
-}
-
-.doc-layout__preview {
-  width: calc(var(--lyrixi-phone-width) + 48px);
-  padding: 24px 24px 32px;
-  border-left: 1px solid #e8e8e8;
-  background: #f0f0f0;
-  position: sticky;
-  top: var(--lyrixi-header-height);
-  align-self: start;
-  height: calc(100vh - var(--lyrixi-header-height));
-  overflow: auto;
 }
 
 .guide-layout {
@@ -120,16 +108,6 @@
 .card p {
   margin: 0;
   font-size: 13px;
-}
-
-@media (max-width: 1100px) {
-  .doc-layout {
-    grid-template-columns: var(--lyrixi-sidebar-width) minmax(0, 1fr);
-  }
-
-  .doc-layout__preview {
-    display: none;
-  }
 }
 
 @media (max-width: 800px) {

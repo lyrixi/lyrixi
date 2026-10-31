@@ -28,10 +28,6 @@ export function ToolsPage() {
 
   const item = findUtil(productId, slug)
   const markdown = item ? getMarkdownByRelativePath(item.mdRelative) : null
-  const previewDemoId =
-    item?.primaryDemo != null
-      ? `${productId}/${item.slug}/${item.primaryDemo}`
-      : null
 
   return (
     <DocLayout
@@ -40,7 +36,7 @@ export function ToolsPage() {
       markdown={markdown}
       title={item?.title || slug}
       resourceSlug={item?.slug ?? slug}
-      previewDemoId={previewDemoId}
+      mdRelative={item?.mdRelative ?? ''}
       emptyHint={<p>未找到工具文档。请确认 sibling 源码与 catalog 是否已生成。</p>}
     />
   )

@@ -11,10 +11,6 @@ export function ComponentDocPage() {
   const item = findComponent(productId, slug)
 
   const markdown = item ? getMarkdownByRelativePath(item.mdRelative) : null
-  const previewDemoId =
-    item?.primaryDemo != null
-      ? `${productId}/${item.name.toLowerCase()}/${item.primaryDemo}`
-      : null
 
   return (
     <DocLayout
@@ -23,7 +19,7 @@ export function ComponentDocPage() {
       markdown={markdown}
       title={item?.title || slug}
       resourceSlug={item?.slug ?? slug}
-      previewDemoId={previewDemoId}
+      mdRelative={item?.mdRelative ?? ''}
       emptyHint={<p>未找到组件文档。请确认 sibling 源码路径与 catalog 是否已生成。</p>}
     />
   )

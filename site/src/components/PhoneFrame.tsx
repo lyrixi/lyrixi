@@ -12,7 +12,7 @@ export function PhoneFrame({ src, title = 'Preview' }: PhoneFrameProps) {
     <div className={styles.wrap}>
       <div className={styles.device}>
         <div className={styles.notch} aria-hidden />
-        <iframe className={styles.frame} title={title} src={src} />
+        <iframe key={src} className={styles.frame} title={title} src={src} />
       </div>
     </div>
   )

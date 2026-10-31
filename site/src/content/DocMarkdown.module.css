@@ -2,6 +2,7 @@
   font-size: 15px;
   line-height: 1.7;
   color: var(--lyrixi-text-on-light);
+  max-width: 1200px;
 }
 
 .doc h1 {
