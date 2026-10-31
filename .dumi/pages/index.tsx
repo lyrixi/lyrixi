@@ -25,6 +25,10 @@ export default function HomePage() {
       </section>
 
       <section className="lyrixi-home__section" id="install">
+        <h2>AI文档初始化</h2>
+        <pre>
+          <code>{`npx lyrixi-mobile`}</code>
+        </pre>
         <h2>环境安装</h2>
         <p>使用 npm 安装（需 React / React DOM）：</p>
         <pre>
