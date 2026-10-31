@@ -2,4 +2,4 @@ node_modules
 docs
 .DS_Store
 *.local
-site/dist
+.dumi/tmp

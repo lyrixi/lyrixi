@@ -1,34 +1,24 @@
 {
   "name": "lyrixi",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "Lyrixi docs site for lyrixi-mobile and lyrixi-mobile-rn",
-  "type": "module",
+  "description": "Lyrixi documentation site (dumi + lyrixi-mobile)",
   "scripts": {
-    "dev": "npm run catalog && vite --config site/vite.config.ts",
-    "build": "npm run catalog && vite build --config site/vite.config.ts && node site/scripts/copy-assets.mjs",
-    "typecheck": "tsc -p site/tsconfig.json --noEmit",
-    "preview": "vite preview --config site/vite.config.ts",
-    "catalog": "node site/scripts/generate-catalog.mjs",
-    "copy-assets": "node site/scripts/copy-assets.mjs"
+    "dev": "dumi dev",
+    "build": "dumi build && node scripts/copy-assets.mjs",
+    "preview": "dumi preview",
+    "prepare": "dumi setup"
   },
   "dependencies": {
-    "lyrixi-mobile": "^0.1.3",
+    "dumi-theme-mobile": "^2.3.5",
+    "lyrixi-mobile": "^0.1.4",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-markdown": "^10.1.0",
-    "react-native-web": "^0.20.0",
-    "react-router-dom": "^7.6.2",
-    "rehype-raw": "^7.0.0",
-    "remark-gfm": "^4.0.1"
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
-    "@vitejs/plugin-react": "^4.5.2",
-    "less": "^4.3.0",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5",
-    "vite-plugin-svgr": "^4.3.0"
+    "dumi": "^2.4.55",
+    "typescript": "^5.8.3"
   }
 }
