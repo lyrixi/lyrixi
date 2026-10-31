@@ -7,10 +7,10 @@
 需与 sibling 源码同级：
 
 ```text
-Documents/front/
-  lyrixi/           ← 本仓库
-  lyrixi-mobile/
-  lyrixi-mobile-rn/ ← 可选（未发布前可不依赖）
+development/lyrixi/   （或任意同级目录）
+  lyrixi/             ← 本仓库
+  lyrixi-mobile/      ← 组件库源码（文档站扫描此目录）
+  lyrixi-mobile-rn/   ← 可选（未发布前可不依赖）
 ```
 
 ```bash

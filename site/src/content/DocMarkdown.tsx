@@ -1,8 +1,9 @@
-import matter from 'gray-matter'
 import ReactMarkdown from 'react-markdown'
 import rehypeRaw from 'rehype-raw'
 import remarkGfm from 'remark-gfm'
 import type { Components } from 'react-markdown'
+
+import { stripFrontmatter } from './stripFrontmatter'
 
 import styles from './DocMarkdown.module.css'
 
@@ -19,7 +20,7 @@ interface DocMarkdownProps {
  * instead of being executed in the markdown tree.
  */
 export function DocMarkdown({ source, onDemoSrc, activeDemoSrc }: DocMarkdownProps) {
-  const { content } = matter(source)
+  const content = stripFrontmatter(source)
 
   const components: Components = {
     code({ className, children, ...props }) {

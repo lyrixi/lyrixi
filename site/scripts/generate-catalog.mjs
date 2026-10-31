@@ -51,6 +51,67 @@ function parseFrontmatter(filePath) {
 }
 
 /**
+ * @param {string} mdText
+ */
+function parseDemoRefsFromMd(mdText) {
+  const refs = []
+  const re = /<code\s+src=["']([^"']+)["']\s*>\s*<\/code>/g
+  let m
+  while ((m = re.exec(mdText)) !== null) {
+    refs.push(m[1])
+  }
+  return refs
+}
+
+/**
+ * @param {string} demoSrc e.g. ./demos/Common/index.tsx
+ */
+function demoKeyFromSrc(demoSrc) {
+  const m = demoSrc.match(/\/demos\/(.+)\.(tsx|jsx)$/i)
+  if (!m) return null
+  const rel = m[1]
+  if (rel.endsWith('/index')) {
+    const folder = rel.slice(0, -'/index'.length)
+    return folder.split('/').pop() || null
+  }
+  return rel.split('/').pop() || null
+}
+
+/**
+ * @param {string} demosDir
+ * @param {'components' | 'utils' | 'examples'} kind
+ */
+function collectDemos(demosDir, kind) {
+  if (!fs.existsSync(demosDir)) return []
+
+  /** @type {string[]} */
+  const keys = []
+
+  if (kind === 'examples') {
+    for (const entry of fs.readdirSync(demosDir)) {
+      const full = path.join(demosDir, entry)
+      const stat = fs.statSync(full)
+      if (stat.isFile() && /\.(tsx|jsx)$/.test(entry)) {
+        keys.push(entry.replace(/\.(tsx|jsx)$/, ''))
+        continue
+      }
+      if (!stat.isDirectory()) continue
+      const hasIndex = ['index.tsx', 'index.jsx'].some((f) => fs.existsSync(path.join(full, f)))
+      if (hasIndex) keys.push(entry)
+    }
+    return keys.sort((a, b) => a.localeCompare(b))
+  }
+
+  for (const file of fs.readdirSync(demosDir)) {
+    if (file.endsWith('.tsx') || file.endsWith('.jsx')) {
+      keys.push(file.replace(/\.(tsx|jsx)$/, ''))
+    }
+  }
+
+  return keys.sort((a, b) => a.localeCompare(b))
+}
+
+/**
  * @param {string} absDir
  * @param {'components' | 'utils' | 'examples'} kind
  * @param {string} productId
@@ -68,17 +129,15 @@ function scanKind(absDir, kind, productId) {
     const mdPath = path.join(dir, 'index.zh-CN.md')
     if (!fs.existsSync(mdPath)) continue
 
+    const mdText = fs.readFileSync(mdPath, 'utf8')
     const meta = parseFrontmatter(mdPath)
     const demosDir = path.join(dir, 'demos')
-    /** @type {string[]} */
-    const demos = []
-    if (fs.existsSync(demosDir)) {
-      for (const file of fs.readdirSync(demosDir)) {
-        if (file.endsWith('.tsx') || file.endsWith('.jsx')) {
-          demos.push(file.replace(/\.(tsx|jsx)$/, ''))
-        }
-      }
-    }
+    const demos = collectDemos(demosDir, kind)
+    const mdDemoKeys = parseDemoRefsFromMd(mdText)
+      .map(demoKeyFromSrc)
+      .filter((k) => k != null)
+    const primaryFromMd = mdDemoKeys.find((k) => demos.includes(k)) ?? mdDemoKeys[0]
+    const primaryDemo = primaryFromMd ?? demos[0] ?? null
 
     items.push({
       productId,
@@ -91,7 +150,7 @@ function scanKind(absDir, kind, productId) {
       order: meta.order,
       mdRelative: path.relative(frontRoot, mdPath).split(path.sep).join('/'),
       demos,
-      primaryDemo: demos[0] || null,
+      primaryDemo,
     })
   }
 

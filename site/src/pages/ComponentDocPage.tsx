@@ -22,6 +22,7 @@ export function ComponentDocPage() {
       mode="components"
       markdown={markdown}
       title={item?.title || slug}
+      resourceSlug={item?.slug ?? slug}
       previewDemoId={previewDemoId}
       emptyHint={<p>未找到组件文档。请确认 sibling 源码路径与 catalog 是否已生成。</p>}
     />

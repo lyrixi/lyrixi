@@ -1,3 +1,4 @@
+import fs from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -8,6 +9,11 @@ import svgr from 'vite-plugin-svgr'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '..')
 const mobileRoot = path.resolve(rootDir, '../lyrixi-mobile')
+const mobilePkgEntry = path.resolve(rootDir, 'node_modules/lyrixi-mobile/esm/index.js')
+/** Prefer installed package (same as app consumers); fall back to sibling src while developing the library. */
+const mobileImportEntry = fs.existsSync(mobilePkgEntry)
+  ? mobilePkgEntry
+  : path.resolve(mobileRoot, 'src/index.ts')
 
 /**
  * Docs site build.
@@ -32,7 +38,7 @@ export default defineConfig({
   resolve: {
     alias: [
       { find: '@', replacement: path.resolve(__dirname, 'src') },
-      { find: 'lyrixi-mobile', replacement: path.resolve(mobileRoot, 'src/index.ts') },
+      { find: 'lyrixi-mobile', replacement: mobileImportEntry },
     ],
     extensions: ['.tsx', '.ts', '.jsx', '.js'],
   },
