@@ -29,7 +29,7 @@ export default function LocationMainDemo() {
           bmapKeys: {
             android: '',
             ios: '',
-            web: '4KFq5IGKQM1c6vkVhgIpAYFu'
+            web: ''
           },
           googleKeys: {
             android: '',

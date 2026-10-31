@@ -132,7 +132,7 @@ export default function LocationComboDemo() {
                 bmapKeys: {
                   android: '',
                   ios: '',
-                  web: '4KFq5IGKQM1c6vkVhgIpAYFu'
+                  web: ''
                 },
                 googleKeys: {
                   android: '',
@@ -164,7 +164,7 @@ export default function LocationComboDemo() {
                 bmapKeys: {
                   android: '',
                   ios: '',
-                  web: '4KFq5IGKQM1c6vkVhgIpAYFu'
+                  web: ''
                 },
                 googleKeys: {
                   android: '',
@@ -276,7 +276,7 @@ export default function LocationComboDemo() {
                 bmapKeys: {
                   android: '',
                   ios: '',
-                  web: '4KFq5IGKQM1c6vkVhgIpAYFu'
+                  web: ''
                 },
                 googleKeys: {
                   android: '',

@@ -17,6 +17,16 @@ npm run sync:mobile-docs   # 从 ../lyrixi-mobile 更新 src-docs/ 与 mobile-sr
 
 发布前请保证 `package.json` 中 `lyrixi-mobile` 版本与文档一致。
 
+## 脱敏
+
+`npm run build` 会先执行 `scripts/sanitize-docs.mjs`，扫描 `mobile-src/`、`src-docs/` 与 `.dumi/pages/`，替换或清空：
+
+- 内部品牌/域名（如 qince、waiqin 等，不区分大小写）
+- 地图 demo 中的 `bmap` / `google` / `amap` web key
+- 内部 OSS 等不应公开的 URL
+
+从 `lyrixi-mobile` 同步文档后，发布前请再跑一遍 `npm run build`，勿在 demo 中写真实 Key。
+
 ## 构建产物
 
 | 路径 | 内容 |

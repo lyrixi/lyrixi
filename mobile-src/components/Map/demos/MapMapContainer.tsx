@@ -33,7 +33,7 @@ export default function MapMapContainerDemo() {
             bmapKeys: {
               android: '',
               ios: '',
-              web: '7b6e260fc45a67b31a265e22575f1c5e'
+              web: ''
             },
             googleKeys: {
               android: '',
@@ -49,7 +49,7 @@ export default function MapMapContainerDemo() {
           }}
           // config={{
           //   bmapKeys: { android: '', ios: '', web: '' },
-          //   googleKeys: { android: '', ios: '', web: 'AIzaSyCpl3yp1f43HzwS1WBUCjBVdjb7IxXCXns' },
+          //   googleKeys: { android: '', ios: '', web: '' },
           //   amapKeys: { android: '', ios: '', web: '' },
           //   type: 'google'
           // }}

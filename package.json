@@ -5,7 +5,7 @@
   "description": "Lyrixi documentation site (dumi + lyrixi-mobile)",
   "scripts": {
     "dev": "dumi dev",
-    "build": "dumi build && node scripts/copy-assets.mjs",
+    "build": "node scripts/sanitize-docs.mjs && dumi build && node scripts/copy-assets.mjs",
     "preview": "dumi preview",
     "prepare": "dumi setup",
     "sync:mobile-docs": "node scripts/sync-mobile-docs.mjs"

@@ -24,8 +24,8 @@ export default function MediaDemo() {
     },
     {
       id: '2',
-      fileThumbnail: 'https://macqj.oss-cn-beijing.aliyuncs.com/2024/12/248300cfc75e100.jpg',
-      fileUrl: 'https://macqj.oss-cn-beijing.aliyuncs.com/2024/12/248300cfc75e100.jpg',
+      fileThumbnail: 'https://lyrixi.github.io/lyrixi/assets/test/2.jpg',
+      fileUrl: 'https://lyrixi.github.io/lyrixi/assets/test/2.jpg',
       fileType: 'image'
       // status: 'uploading'
     },

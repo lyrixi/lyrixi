@@ -24,3 +24,5 @@ if (!fs.existsSync(path.join(siblingMobile, 'src/components'))) {
 copyDir(path.join(siblingMobile, 'src-docs'), path.join(docsRoot, 'src-docs'))
 copyDir(path.join(siblingMobile, 'src'), path.join(docsRoot, 'mobile-src'))
 console.log('[sync-mobile-docs] updated src-docs/ and mobile-src/ from lyrixi-mobile')
+
+import('./sanitize-docs.mjs')

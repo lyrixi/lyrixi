@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width,viewport-fit=cover">
+<link rel="shortcut icon" href="/lyrixi/assets/images/favicon.ico">
+<style>
+    :root {
+      --lyrixi-brand: #35e6b6;
+      --lyrixi-brand-hover: #60f8d0;
+      --lyrixi-bg: #1a1a1a;
+      --lyrixi-bg-elevated: #282828;
+      --lyrixi-border: #3a3a3a;
+      --lyrixi-text: #f8f8f8;
+      --lyrixi-text-secondary: #989898;
+      --dumi-primary-color: #35e6b6;
+    }
+    * { scrollbar-width: thin !important; }
+    .dumi-default-header-content,
+    .dumi-default-doc-layout > main {
+      max-width: none !important;
+    }
+    .dumi-default-sidebar {
+      width: 250px !important;
+    }
+    .dumi-default-header {
+      background: var(--lyrixi-bg-elevated) !important;
+      border-bottom: 1px solid var(--lyrixi-border) !important;
+    }
+    .dumi-default-header a,
+    .dumi-default-header .dumi-default-logo {
+      color: var(--lyrixi-text) !important;
+    }
+    .dumi-default-navbar > li > a.active,
+    .dumi-default-navbar > li > a:hover {
+      color: var(--lyrixi-brand) !important;
+    }
+    .dumi-default-previewer-editor-tip-btn {
+      cursor: pointer !important;
+    }
+    .dumi-default-previewer-editor-tip-btn * {
+      pointer-events: none;
+    }
+    .dumi-default-previewer-meta .dumi-default-source-code-editor-textarea {
+      display: none;
+    }
+    .dumi-default-previewer-meta.active .dumi-default-source-code-editor-textarea {
+      display: block;
+      background: #fff;
+      color: #000;
+    }
+  </style>
+<link rel="stylesheet" href="/lyrixi/umi.3be8b53c.css">
+<script>window.onload = function () {
+      var root = document.getElementById('root');
+      if (!root) return;
+      root.addEventListener('click', function (e) {
+        var t = e.target;
+        if (t && t.classList && t.classList.contains('dumi-default-previewer-editor-tip-btn')) {
+          var meta = t.closest('.dumi-default-previewer-meta');
+          if (meta) meta.classList.toggle('active');
+        }
+      }, false);
+    };</script>
+<script src="/lyrixi/preload_helper.63f09e8f.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script src="/lyrixi/umi.fa2a3b93.js"></script>
+</body>
+</html>
